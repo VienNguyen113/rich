@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budget</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<!-- Vendor js -->
+	<script type="text/javascript" src="styles/vendor/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="styles/vendor/js/tether-1.3.3.min.js"></script>
+	<script type="text/javascript" src="styles/vendor/js/bootstrap-v4-anpha6.min.js"></script>
+	<!-- Custom js -->
+	<script type="text/javascript" src="styles/custom/v1/js/main.js"></script>
+
+	<!-- Vendor css -->
+	<link rel="stylesheet" type="text/css" href="styles/vendor/css/bootstrap-v4-anpha6.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/vendor/css/font-awesome-4.7.0.min.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="styles/custom/v1/css/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/custom/v1/css/main-media.css">
+</head>
+<body>
+	<header style="height: 120px; background: #333">
+	</header>
+
+	<div class="content-container">
+		<div class="container">
+			<div class="row">
+				<div class="content-wrapper col-lg-12 offset-lg-0">
+					<div class="content-inner">
+						<!-- Start statistics -->
+						<div class="statistics">
+							<div class="statistics-inner clearfix">
+								<div class="stat"><b>$</b></div>
+								<div class="stat">
+									<p>Budgeted: <span class="textPrimary">$110,000</span></p>
+								</div>
+								<div class="stat">
+									<p>Funded: <span class="textSuccess">$110,000</span><span class="explain">(from Contribution & Financing)</span></p>
+								</div>
+								<div class="stat">
+									<p>Missing: <span class="textSuccess">$0</span></p>
+								</div>
+								<div class="stat">
+									<p>Paid: <span class="textDanger">$56,000</span></p>
+								</div>
+							</div>
+						</div>
+						<!-- End statistics -->
+
+						<div class="content-detail">
+							<h2 class="title">Budget</h2>
+							<!-- Start Control Panel -->
+							<div class="control-panel">
+								<h3 class="controlCollapse iconArrowDown" data-toggle="collapse" data-target="#budget">
+									Collappse All
+								</h3>
+								<div class="filter clearfix">
+									<p>Show:</p>
+									<select class="fitlter-row">
+										<option>Filled only</option>
+										<option>2</option>
+									</select>
+									<select class="currency">
+										<option>USD</option>
+										<option>EUR</option>
+										<option>VND</option>
+									</select>
+								</div>
+								<div class="name-column clearfix">
+									<p>Estimated</p>
+									<p>Actual</p>
+									<p>Paid</p>
+									<p>Remaining</p>
+								</div>
+								<div class="search-box">
+									<input type="text" name="search" class="form-search iconSearch" placeholder="Search...">
+								</div>
+							</div>
+							<!-- End Control Panel -->
+							
+							<!-- Start Main Content -->
+							<div class="main-content collapse show" id="budget">
+								<div class="sub-collapse">
+									<div class="head-collapse head-collapse-1">
+										<h2 class="title controlCollapse iconArrowDown"  data-toggle="collapse" data-target="#totalBudget">Total Budget</h2>
+										<div class="data-money">
+											<div><p>$110,000</p></div>
+											<div><p class="textWarning">$110,000</p></div>
+											<div><p class="textDanger">$56,000</p></div>
+											<div><p class="textSuccess">$54,000</p></div>
+										</div>
+									</div>
+
+									<div class="sub-content collapse show" id="totalBudget">
+										<!-- Start Category -->
+										<div class="sub-collapse bgLightBlue">
+											<div class="head-collapse head-collapse-2">
+												<h4 class="controlCollapse iconArrowRight"  data-toggle="collapse" data-target="#category1">Category 1</h4>
+												<div class="data-money">
+													<div><p>$110,000</p></div>
+													<div><p class="textWarning">$110,000</p></div>
+													<div><p class="textDanger">$56,000</p></div>
+													<div><p class="textSuccess">$54,000</p></div>
+												</div>
+											</div>
+											<div class="sub-content collapse" id="category1">
+												<div class="sub-collapse bgWhite borderLightBlue">
+													Category 1
+												</div>
+											</div>
+										</div>
+										<!-- End Category -->
+
+										<!-- Start Category -->
+										<div class="sub-collapse bgLightBlue">
+											<div class="head-collapse head-collapse-2">
+												<h4 class="controlCollapse iconArrowDown"  data-toggle="collapse" data-target="#category2">Category 2</h4>
+												<div class="data-money">
+													<div><p>$110,000</p></div>
+													<div><p class="textWarning">$110,000</p></div>
+													<div><p class="textDanger">$56,000</p></div>
+													<div><p class="textSuccess">$54,000</p></div>
+												</div>
+											</div>
+											<div class="sub-content collapse show" id="category2">
+												<!-- Start Sub Category -->
+												<div class="sub-collapse bgWhite borderLightBlue">
+													<div class="head-collapse head-collapse-3">
+														<h4 class="controlCollapse iconArrowRight"  data-toggle="collapse" data-target="#subCategory1">Sub Category 1</h4>
+														<div class="data-money">
+															<div><p>$110,000</p></div>
+															<div><p class="textWarning">$110,000</p></div>
+															<div><p class="textDanger">$56,000</p></div>
+															<div><p class="textSuccess">$54,000</p></div>
+														</div>
+													</div>
+													<div class="sub-content collapse" id="subCategory1">
+														Sub Category 1
+													</div>
+												</div>
+												<!-- End Sub Category -->
+												
+												<!-- Start Sub Category -->
+												<div class="sub-collapse bgWhite borderLightBlue">
+													<div class="head-collapse head-collapse-3">
+														<h4 class="controlCollapse iconArrowDown"  data-toggle="collapse" data-target="#subCategory2">Sub Category 2</h4>
+														<div class="data-money">
+															<div><p>$110,000</p></div>
+															<div><p class="textWarning">$110,000</p></div>
+															<div><p class="textDanger">$56,000</p></div>
+															<div><p class="textSuccess">$54,000</p></div>
+														</div>
+													</div>
+													<div class="sub-content collapse show" id="subCategory2">
+														<!-- Start Product -->
+														<div class="sub-collapse bgLightBlue">
+															<div class="head-collapse head-collapse-4">
+																<h4 class="controlCollapse iconArrowRight"  data-toggle="collapse" data-target="#product1">Product 1</h4>
+																<div class="data-money">
+																	<div><p>$110,000</p></div>
+																	<div><p class="textWarning">$110,000</p></div>
+																	<div><p class="textDanger">$56,000</p></div>
+																	<div><p class="textSuccess">$54,000</p></div>
+																</div>
+															</div>
+															<div class="sub-content collapse" id="product1">
+																Product 1
+															</div>
+														</div>
+														<!-- End Product -->
+														
+														<!-- Start Product -->
+														<div class="sub-collapse bgLightBlue">
+															<div class="head-collapse head-collapse-4">
+																<h4 class="controlCollapse iconArrowDown"  data-toggle="collapse" data-target="#product2">Product 2</h4>
+																<div class="data-money">
+																	<div><p>$110,000</p></div>
+																	<div><p class="textWarning">$110,000</p></div>
+																	<div><p class="textDanger">$56,000</p></div>
+																	<div><p class="textSuccess">$54,000</p></div>
+																</div>
+															</div>
+															<div class="sub-content collapse show" id="product2">
+																<div class="sub-collapse bgWhite borderLightBlue">
+																	<div class="head-collapse head-collapse-5">
+																		<div class="item-name">Item 1</div>
+																		<div class="data-money">
+																			<div><p>$110,000</p></div>
+																			<div><p class="textWarning">$110,000</p></div>
+																			<div><p class="textDanger">$56,000</p></div>
+																			<div><p class="textSuccess">$54,000</p></div>
+																		</div>
+																		<div class="action">
+																			<button class="btnAdd"><span class="iconAdd">+</span> Add Payment</button>
+																			<button class="btnEdit iconEdit">Edit</button>
+																		</div>
+																	</div>
+																</div>
+																<div class="sub-collapse mode-add bgWhite borderLightBlue">
+																	<div class="head-collapse head-collapse-5">
+																		<div class="item-name">Item 2</div>
+																		<form action="" class="form clearfix">
+																			<p>Payment amount: </p>
+																			<input type="text">
+																			<select class="currency">
+																				<option>USD</option>
+																				<option>EUR</option>
+																				<option>VND</option>
+																			</select>
+																		</form>
+																		<div class="action">
+																			<button class="btnDelete iconDelete"></button>
+																			<button class="btnDone">DONE</button>
+																		</div>
+																	</div>
+																</div>
+																<div class="sub-collapse bgWhite borderLightBlue">
+																	<div class="head-collapse head-collapse-5">
+																		<div class="item-name">Item 3</div>
+																		<div class="data-money">
+																			<div><p>$110,000</p></div>
+																			<div><p class="textWarning">$110,000</p></div>
+																			<div><p class="textDanger">$56,000</p></div>
+																			<div><p class="textSuccess">$54,000</p></div>
+																		</div>
+																		<div class="action">
+																			<button class="btnAdd btnAddPayment"><span class="iconAdd">+</span> Add Payment</button>
+																			<button class="btnEdit iconEdit">Edit</button>
+																		</div>
+																	</div>
+																</div>
+																<div class="area-action">
+																	<button class="btnAdd btnAddItem">+ Add Item...</button>
+																</div>
+															</div>
+														</div>
+														<!-- End Product -->
+
+														<div class="area-action">
+															<button class="btnAdd btnAddProduct">+ Add Product...</button>
+														</div>
+													</div>
+												</div>
+												<!-- End Sub Category -->
+
+												<div class="area-action">
+													<button class="btnAdd btnAddSubCategory">+ Add Sub-Category...</button>
+												</div>
+											</div>
+										</div>
+										<!-- End Category -->
+
+										<!-- Start Category -->
+										<div class="sub-collapse bgLightBlue">
+											<div class="head-collapse head-collapse-2">
+												<h4 class="controlCollapse iconArrowRight"  data-toggle="collapse" data-target="#category3">Category 3</h4>
+												<div class="data-money">
+													<div><p>$110,000</p></div>
+													<div><p class="textWarning">$110,000</p></div>
+													<div><p class="textDanger">$56,000</p></div>
+													<div><p class="textSuccess">$54,000</p></div>
+												</div>
+											</div>
+											<div class="sub-content collapse" id="category3">
+												<div class="sub-collapse bgWhite borderLightBlue">
+													Category 3
+												</div>
+											</div>
+										</div>
+										<!-- End Category -->
+
+										<!-- Start Add Category -->
+										<div class="add-category bgLightBlue clearfix">
+											<div class="category-name">
+												<input type="text" placeholder="Enter or use dropdown...">
+											</div>
+											<div class="data-money">
+												<div><input type="text"></div>
+												<div><input type="text"></div>
+												<div><input type="text"></div>
+												<div><input type="text"></div>
+											</div>
+											<div class="action">
+												<button class="btnDelete iconDelete"></button>
+												<button class="btnDone">DONE</button>
+											</div>
+										</div>
+										<!-- End Add Category -->
+									</div>
+								</div>
+							</div>
+							<!-- End Main Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer style="height: 120px; background: #333">
+	</footer>
+
+</html>

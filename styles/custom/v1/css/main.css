@@ -71,6 +71,12 @@ select {
 .borderLightBlue {
 	box-shadow: inset 0px 0px 0px 1px #cad7e6;
 }
+.pullRight {
+	float: right;
+}
+.pullLeft {
+	float: left;
+}
 
 
 /**
@@ -99,7 +105,7 @@ select {
 }
 .content-container .content-inner .statistics-inner .stat {
 	height: 30px;
-	padding: 0 10px;
+	padding: 0 20px;
 	border-right: 1px solid #8aa4c7;
 	display: inline-block;
 	float: left;
@@ -140,9 +146,9 @@ select {
 }
 .content-container .control-panel {
 	height: 40px;
+	position: relative;
 }
 .content-container .control-panel>* {
-	float: left;
 	display: inline-block;
 }
 .content-container .control-panel .controlCollapse {
@@ -164,12 +170,21 @@ select {
 	display: inline-block;
 	float: left;
 }
-.content-container .control-panel .filter input,
 .content-container .control-panel .filter select {
 	margin-right: 10px;
 }
+.content-container .control-panel .filter select.filter-row {
+	width: 150px;
+}
+.content-container .control-panel .filter select.currency {
+	width: 60px;
+}
 .content-container .control-panel .name-column, .data-money {
 	width: 340px;
+}
+.content-container .control-panel .name-column {
+	position: absolute;
+	left: 388px;
 }
 .content-container .control-panel .name-column p {
 	width: 25%;
@@ -187,7 +202,6 @@ select {
 .content-container .control-panel .search-box {
 	width: 200px;
 	padding-left: 10px;
-	float: right;
 }
 .content-container .control-panel .search-box input {
 	width: 100%;
@@ -213,19 +227,19 @@ select {
 }
 .content-container .data-money {
 	position: absolute;
-	left: 329px;
+	left: 387px;
 }
 .content-container .head-collapse-2 .data-money {
-	left: 309px;
+	left: 367px;
 }
 .content-container .head-collapse-3 .data-money {
-	left: 289px;
+	left: 347px;
 }
 .content-container .head-collapse-4 .data-money {
-	left: 269px;
+	left: 327px;
 }
 .content-container .head-collapse-5 .data-money {
-	left: 249px;
+	left: 307px;
 }
 .content-container .data-money div p {
 	width: 25%;
@@ -332,7 +346,7 @@ select {
 }
 .content-container .add-category .data-money {
 	height: 34px;
-	left: 360px;
+	left: 418px;
 }
 .content-container .add-category .data-money div {
 	width: 25%;
@@ -352,4 +366,103 @@ select {
 .content-container .add-category .action button {
 	height: 34px;
 	line-height: 34px;
+}
+.finance-detail table {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.content-container table th {
+	background: #7588b1;
+    color: #fff;
+    padding: 5px 15px;
+    text-align: center;
+    font-weight: 400;
+	border-left: 1px solid #dce4ee;
+}
+.content-container table th:last-child {
+	border-left: 0;
+	border-right: 1px solid #dce4ee;
+}
+.content-container table th:first-child,
+.content-container table td:first-child {
+	text-align: left;
+}
+.content-container table td {
+    padding: 5px 15px;
+    text-align: center;
+    line-height: 30px;
+	border-bottom: 1px solid #dce4ee;
+	border-left: 1px solid #dce4ee;
+}
+.content-container table td:last-child {
+	border: 0;
+	border-bottom: 1px solid #dce4ee;
+	border-right: 1px solid #dce4ee;
+	width: 220px;
+}
+.content-container table td input,
+.content-container table td select {
+	margin: 0;
+	line-height: 28px;
+	height: 30px;
+	width: 100%;
+}
+.content-container table td .action .btnEdit {
+	margin: 0;
+	line-height: 28px;
+	height: 30px;
+	border: 1px solid #dce4ee;
+	padding: 0 15px 0 35px;
+	background-position: 5px;
+}
+
+/*Finance page*/
+.finance-detail .control-panel .total {
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 20px 0 0;
+    background: #8aa4c7;
+    width: 120px;
+}
+.finance-detail .control-panel .currency,
+.finance-detail .control-panel .search-box {
+	margin-right: 10px;
+}
+.finance-detail .data-total {
+	overflow: hidden;
+	float: right;
+	margin-right: 15px;
+}
+.finance-detail .head-collapse-2 .data-total {
+	margin-right: 5px;
+}
+.finance-detail .head-collapse-3 .data-total {
+	margin-right: -5px;
+}
+.finance-detail .head-collapse-4 .data-total {
+	margin-right: -15px;
+}
+.finance-detail .data-total p {
+	margin: 0;
+	height: 30px;
+	line-height: 30px;
+	width: 120px;
+	text-align: center;
+}
+.finance-detail .bank-offer p {
+	margin: 0 50px 0 0;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	color: #6074a2
+}
+.finance-detail .bank-offer p span {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	background-size: 24px;
+	background-position: 0px -7px;
 }

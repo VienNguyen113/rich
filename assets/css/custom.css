@@ -83,16 +83,12 @@ select {
  * Main content
  *
  */
-.content-container {
-	background: #ebeff3;
-	padding: 10px;
-}
 .content-container .content-wrapper {
 	overflow-x: auto;
 }
 .content-container .content-inner {
 	background: #fff;
-	min-width: 960px;
+	min-width: 1110px;
 	padding: 3px 15px 15px;
 }
 .content-container .content-inner .statistics {
@@ -120,6 +116,7 @@ select {
 	padding: 0 2px 0 0;
 	font-weight: 700;
 	font-size: 18px;
+	line-height: 30px;
 }
 .content-container .content-inner .statistics-inner .stat .iconDollar {
 	width: 20px;
@@ -147,6 +144,16 @@ select {
 .content-container .control-panel {
 	height: 40px;
 	position: relative;
+}
+.control-panel-fixed {
+	position: fixed !important;
+	width: 1110px !important;
+	top: 0 !important;
+	left: calc(50% - 555px) !important;
+	background: #e0e0e0 !important;
+	z-index: 9999 !important;
+	height: 50px !important;
+	padding: 5px 5px 0 0 !important;
 }
 .content-container .control-panel>* {
 	display: inline-block;
@@ -180,11 +187,11 @@ select {
 	width: 60px;
 }
 .content-container .control-panel .name-column, .data-money {
-	width: 340px;
+	width: 400px;
 }
 .content-container .control-panel .name-column {
 	position: absolute;
-	left: 388px;
+	left: 412px;
 }
 .content-container .control-panel .name-column p {
 	width: 25%;
@@ -213,9 +220,14 @@ select {
 }
 .content-container .head-collapse {
 	padding: 5px;
-	overflow: hidden;
 	width: 100%;
 	position: relative;
+}
+.content-container .head-collapse:before,
+.content-container .head-collapse:after {
+    display: table;
+    content: " ";
+    clear: both;
 }
 .content-container .sub-collapse .head-collapse .controlCollapse {
 	display: inline-block;
@@ -227,19 +239,19 @@ select {
 }
 .content-container .data-money {
 	position: absolute;
-	left: 387px;
+	left: 411px;
 }
 .content-container .head-collapse-2 .data-money {
-	left: 367px;
+	left: 391px;
 }
 .content-container .head-collapse-3 .data-money {
-	left: 347px;
+	left: 371px;
 }
 .content-container .head-collapse-4 .data-money {
-	left: 327px;
+	left: 351px;
 }
 .content-container .head-collapse-5 .data-money {
-	left: 307px;
+	left: 331px;
 }
 .content-container .data-money div p {
 	width: 25%;
@@ -323,6 +335,22 @@ select {
 .content-container .mode-add .head-collapse .form p {
 	line-height: 30px;
 }
+.content-container .mode-add .head-collapse .form .formGroup .dropdown,
+.content-container .mode-add .head-collapse .form .formGroup input {
+	float: left;
+	height: 30px;
+	line-height: 28px;
+	margin: 0 0 0 -1px;
+}
+
+.content-container .mode-add .head-collapse .form .formGroup .dropdown button {
+	border: 1px solid #8aa4c7;
+	border-radius: 0;
+	height: 30px;
+	line-height: 28px;
+	margin: 0;
+	padding: 0 10px;
+}
 
 .content-container .area-action button {
 	border: 0;
@@ -337,18 +365,31 @@ select {
 
 .content-container .add-category {
 	padding: 4px;
+	position: relative;
 }
 .content-container .add-category>*{
 	display: inline-block;
 }
-.content-container .add-category input {
+.content-container .add-category input,
+.content-container .add-category select {
 	margin: 0;
+	width: 220px;
+	background-color: #fff;
+}
+.content-container .add-category .category-name input {
+	display: none;
+}
+.content-container .add-category .category-name.formControl input {
+	display: block;
+}
+.content-container .add-category .category-name.formControl select {
+	display: none;
 }
 .content-container .add-category .data-money {
 	height: 34px;
-	left: 418px;
+	left: 391px;
 }
-.content-container .add-category .data-money div {
+.content-container .add-category .data-money .wrap-text-input {
 	width: 25%;
 	margin: 0;
 	border-right: 1px solid #c5d3e3;
@@ -357,7 +398,7 @@ select {
 	text-align: center;
 	padding: 0 2px;
 }
-.content-container .add-category .data-money div:first-child {
+.content-container .add-category .data-money .wrap-text-input:first-child {
 	border-left: 1px solid #c5d3e3;
 }
 .content-container .add-category .data-money input {
@@ -451,14 +492,14 @@ select {
 	width: 120px;
 	text-align: center;
 }
-.finance-detail .bank-offer p {
+.finance-detail .bank-offer a {
 	margin: 0 50px 0 0;
 	height: 30px;
 	line-height: 30px;
 	display: inline-block;
 	color: #6074a2
 }
-.finance-detail .bank-offer p span {
+.finance-detail .bank-offer a span {
 	display: inline-block;
 	width: 30px;
 	height: 30px;

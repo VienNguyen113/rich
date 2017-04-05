@@ -176,11 +176,11 @@ $(document).ready(function()
 
 
 
-      // Editable Inline Form Fields
-      $.fn.editable.defaults.mode = 'inline';
-      $('.inline-date').editable({
-        showbuttons : false
-      });
+      // // Editable Inline Form Fields
+      // $.fn.editable.defaults.mode = 'inline';
+      // $('.inline-date').editable({
+      //   showbuttons : false
+      // });
 
 
       // Planning Collapse functions
@@ -203,28 +203,6 @@ $(document).ready(function()
                 e.popover({content: d, html: true}).popover('show');
             });
         });
-
-
-
-        // Invitations Seasting Chart
-        new Morris.Donut({
-            element: 'seatingChart',
-            data: [
-              {value: 2, label: 'Groom\'s Colleages', formatted: '2' },
-              {value: 1, label: 'Groom\'s Friends', formatted: '1' },
-              {value: 1, label: 'Groom\'s Family', formatted: '1' },
-              {value: 3, label: 'Mutual Friends', formatted: '3' }
-            ],
-            colors: [ 
-              "#E06651",
-              "#EFD163",
-              '#B3CF6E',
-              '#6892EB'
-              ],
-
-            formatter: function (x, data) { return data.formatted; }
-          });
-
 });
 
 

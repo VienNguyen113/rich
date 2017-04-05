@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'WedSite';
+  src:
+    url('../fonts/WedSite.ttf?j7lu15') format('truetype'),
+    url('../fonts/WedSite.woff?j7lu15') format('woff'),
+    url('../fonts/WedSite.svg?j7lu15#WedSite') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ws-"], [class*=" ws-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'WedSite' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ws-ws_replay:before {
+  content: "\e917";
+}
+.ws-ws_align-center:before {
+  content: "\e918";
+}
+.ws-ws_align-justify:before {
+  content: "\e919";
+}
+.ws-ws_align-left:before {
+  content: "\e91a";
+}
+.ws-ws_align-right:before {
+  content: "\e91b";
+}
+.ws-ws_cart:before {
+  content: "\e91c";
+}
+.ws-ws_address:before {
+  content: "\e900";
+}
+.ws-ws_heart:before {
+  content: "\e901";
+}
+.ws-ws_color:before {
+  content: "\e902";
+}
+.ws-ws_eye:before {
+  content: "\e903";
+}
+.ws-ws_location:before {
+  content: "\eabc";
+}
+.ws-ws_misc:before {
+  content: "\e904";
+}
+.ws-ws_text:before {
+  content: "\e905";
+}
+.ws-ws_texture:before {
+  content: "\e906";
+}
+.ws-ws_uppercase:before {
+  content: "\e907";
+}
+.ws-ws_bold:before {
+  content: "\e908";
+}
+.ws-ws_italic:before {
+  content: "\e909";
+}
+.ws-ws_scalloped:before {
+  content: "\e90a";
+}
+.ws-ws_cirlce:before {
+  content: "\e90b";
+}
+.ws-ws_ellipse:before {
+  content: "\e90c";
+}
+.ws-ws_rectangle:before {
+  content: "\e90d";
+}
+.ws-ws_square:before {
+  content: "\e90e";
+}
+.ws-ws_calendar:before {
+  content: "\e90f";
+}
+.ws-ws_gift:before {
+  content: "\e910";
+}
+.ws-ws_circles:before {
+  content: "\e911";
+}
+.ws-ws_edit:before {
+  content: "\e912";
+}
+.ws-ws_success:before {
+  content: "\eadb";
+}
+.ws-ws_error:before {
+  content: "\eaab";
+}
+.ws-ws_delete:before {
+  content: "\eaa8";
+}
+.ws-ws_settings:before {
+  content: "\e00f";
+}
+.ws-ws_comment:before {
+  content: "\ea87";
+}
+.ws-ws_arrow-up:before {
+  content: "\e913";
+}
+.ws-ws_sort:before {
+  content: "\ea84";
+}
+.ws-ws_caret-up:before {
+  content: "\ea8d";
+}
+.ws-ws_email:before {
+  content: "\eaaa";
+}
+.ws-ws_minus:before {
+  content: "\eac1";
+}
+.ws-ws_phone:before {
+  content: "\eac6";
+}
+.ws-ws_picture:before {
+  content: "\eac7";
+}
+.ws-ws_plus:before {
+  content: "\eac8";
+}
+.ws-ws_search:before {
+  content: "\ead6";
+}
+.ws-ws_check:before {
+  content: "\ea97";
+}
+.ws-ws_cancel:before {
+  content: "\ea95";
+}
+.ws-ws_invitees_empty .path1:before {
+  content: "\e914";
+  color: rgb(0, 191, 255);
+}
+.ws-ws_invitees_empty .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 115, 255);
+}
+.ws-ws_invitees_empty .path3:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(196, 209, 227);
+}
+

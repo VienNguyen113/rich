@@ -3,3 +3,25 @@
     	position: relative !important;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .manually-modal .form-group>div {
+    	width: 100%;
+    }
+    .manually-modal .form-group div:first-child {
+    	text-align: left;
+    	padding: 0 15px;
+    }
+    .manually-modal .form-group.form-button>div {
+    	margin: 0;
+    }
+    .manually-modal .form-group.form-w-50 input, 
+    .manually-modal .form-group.form-w-50 select, 
+    .manually-modal .form-group.form-w-50 textarea {
+		width: 100%;
+    }
+
+    .invite-facebook-modal .modal-body .list-friends>div {
+    	width: 100%;
+    }
+}

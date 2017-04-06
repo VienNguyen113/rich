@@ -8,6 +8,10 @@ $(document).ready(function() {
 			$(this).addClass('iconArrowRight');
 		}
 	})
+
+	$('.btn-dropdown-menu-selected').on('click', function (event) {
+	    $(this).parent().toggleClass("open");
+	});
 })
 
 $(window).scroll(function () {

@@ -67,9 +67,6 @@ select {
 .iconDelete {
 	background: url(../img/icons/delete.png) no-repeat transparent 4px center/20px;
 }
-.iconInvitee {
-	background: url(../img/icons/invitee.png) no-repeat transparent center center/200px;
-}
 
 /*background*/
 .bgLightBlue {
@@ -107,8 +104,15 @@ select {
 .controlCollapse {
 	cursor: pointer;
 }
+.iconRotate90:before {
+	transform: rotate(180deg);
+	display: inline-block;
+}
 
 /*checbox*/
+input.custom-checkbox {
+	display: none;
+}
 .label-checkbox {
 	border: 2px solid #c8d5e6;
 	height: 22px;
@@ -133,6 +137,55 @@ input:checked ~ .label-checkbox {
 }
 input:checked ~ .label-checkbox:after {
     display: block;
+}
+
+.label-checkbox.label-checkbox-plus:after {
+	border: solid #fff;
+	margin: 1px auto auto 6px;
+	border-width: 0;
+	font-size: 24px;
+	color: #3f517e;
+	transform: rotate(0deg);
+	content: '-';
+	top: -2px;
+	position: relative;
+}
+input:checked ~ .label-checkbox.label-checkbox-plus {
+    background: #fff;
+	border: 2px solid #6074a2;
+}
+
+/*dropdown*/
+.dropdown-menu-selected {
+	position: absolute;
+    top: 100%;
+	right: 0;
+	border-radius: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.open>.dropdown-menu-selected {
+	display: block;
+}
+.dropdown-menu-selected .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
 }
 
 
@@ -630,6 +683,16 @@ input:checked ~ .label-checkbox:after {
 	height: 200px;
 	display: inline-block;
 	margin: 50px auto 15px;
+	font-size: 190px;
+	position: relative;
+}
+.add-invitee-content .iconInvitee .ws-ws_invitees_empty span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.add-invitee-content .iconInvitee .ws-ws_invitees_empty span:before {
+	margin: 0;
 }
 .add-invitee-content p {
 	font-size: 20px;
@@ -751,25 +814,70 @@ input:checked ~ .label-checkbox:after {
 
 /*list-people-content*/
 .list-people-content .statistic-danger {
-	background: #e87c64;
+	background: rgba(232, 124, 100, 0.9);
 }
 .list-people-content .statistic-primary {
-	background: #7aa5f0;
+	background: rgba(122, 165, 240, 0.9);
 }
 .list-people-content .statistic-success {
-	background: #c0d581;
+	background: rgba(192, 213, 129, 0.9);
 }
 .list-people-content .statistic-warning {
-	background: #f3d875;
+	background: rgba(243, 216, 117, 0.9);
 }
 .list-people-content .list-people-statistic {
 	border-bottom: 1px solid #cad8e5;
 	padding: 0 0 12px;
 	margin-top: -10px;
 	color: #455964;
+	position: relative;
+	overflow: hidden;
+}
+.list-people-statistic .statistic-circle {
+	position: absolute;
+	overflow: hidden;
+	transform: translateY(55%);
+	vertical-align: middle;
+	bottom: 0;
 }
 .list-people-statistic .statistic-circle .statistic {
-	border-radius: 100%;
+    border-radius: 100%;
+    margin-left: -50px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+.list-people-statistic .statistic-circle .statistic:first-child {
+	margin-left: 0;
+}
+.list-people-statistic .statistic-circle .statistic.circle-size-1 {
+	width: 100px;
+	height: 100px;
+	font-size: 20px;
+	line-height: 40px;
+	z-index: 1;
+}
+.list-people-statistic .statistic-circle .statistic.circle-size-2 {
+    width: 150px;
+    height: 150px;
+    font-size: 23px;
+    line-height: 66px;
+    z-index: 2;
+}
+.list-people-statistic .statistic-circle .statistic.circle-size-3 {
+    width: 200px;
+    height: 200px;
+    font-size: 26px;
+    line-height: 100px;
+    z-index: 3;
+}
+.list-people-statistic .statistic-circle .statistic.circle-size-4 {
+    width: 250px;
+    height: 250px;
+    font-size: 29px;
+    line-height: 120px;
+    z-index: 4;
 }
 .list-people-statistic .statistic-rectangle .statistic {
 	text-align: right;
@@ -778,4 +886,287 @@ input:checked ~ .label-checkbox:after {
 	margin-bottom: 6px;
 	padding: 0 10px;
 	min-width: 180px;
+}
+.list-people-search {
+	width: 100%;
+	margin: 20px 0 0 0;
+    position: relative;
+}
+.list-people-search .l-auto-complete {
+    border: 1px solid #8aa4c7;
+    min-width: 300px;
+    display: inline-block;
+    margin: -1px 0 0 0;
+    box-shadow: 0px 0px 3px 1px #eee;
+    padding: 15px 12px 5px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.list-people-search .l-auto-complete li {
+	line-height: 24px;
+	margin-bottom: 5px;
+}
+.list-people-search .l-auto-complete li.s-result {
+	cursor: pointer;
+}
+.list-people-search .l-auto-complete li.s-result:hover span {
+    color: #8aa4c7;
+}
+.list-people-search .l-auto-complete span {
+    font-size: 18px;
+    color: #7f7f7f;
+}
+.list-people-search .l-auto-complete span:before {
+    font-size: 18px;
+    color: #8aa4c7;
+    margin: 0 7px 0 0;
+}
+.list-people-search .search-area {
+    border: 1px solid #8aa4c7;
+    padding: 0 7px;
+}
+.list-people-search .search-area .l-selected {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0 5px;
+    background: #dee6f0;
+    line-height: 28px;
+}
+.list-people-search .search-area .l-selected span.l-cancel {
+    position: relative;
+    top: 1px;
+    left: 3px;
+}
+.list-people-search .search-area .l-selected span.l-cancel:before {
+    color: #8aa4c7;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 600;
+}
+.list-people-search .search-area .l-selected span {
+    color: #7f7f7f;
+}
+.list-people-search .search-area .l-selected span:before {
+    color: #455964;
+    margin-right: 5px;
+}
+.list-people-search .search-area input {
+    border: 0px solid #8aa4c7;
+    margin: 0;
+}
+.list-people-search .search-area span.ws-ws_search {
+    font-size: 20px;
+    color: #bac3d8;
+    top: 3px;
+    position: relative;
+}
+.list-peoples {
+	margin-top: 15px;
+	overflow-x: auto;
+}
+.list-peoples ul {
+	min-width: 670px;
+}
+.list-peoples ul li {
+	margin-bottom: 15px;
+}
+.list-peoples ul li.list-people-header select {
+	border: 0;
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 0;
+	padding-right: 25px;
+    background-size: 16px;
+}
+.list-peoples ul li.list-people-header p {
+	color: #7f7f7f;
+	font-size: 14px;
+	line-height: 34px;
+	margin: 0;
+	font-weight: 600;
+}
+.list-peoples ul li>div {
+	float: left;
+	margin-right: 15px;
+}
+.list-peoples ul li>div.l-guests {
+	width: 210px;
+}
+.list-peoples ul li>div.l-events {
+	width: 20%;
+}
+.list-peoples ul li>div.l-circles {
+	width: 18%;
+}
+.list-peoples ul li>div.l-invitation {
+	width: calc(62% - 370px);
+}
+.list-peoples ul li>div:last-child {
+	margin-right: 0;
+}
+.list-peoples ul li input,
+.list-peoples ul li select {
+	margin: 0;
+}
+.list-peoples li .label-checkbox {
+	position: relative;
+	top: 11px;
+}
+.list-peoples li.list-people-header .label-checkbox {
+	top: 5px;
+}
+.list-peoples li.list-people-body .l-guests img {
+	width: 44px;
+	height: 44px;
+	float: left;
+}
+.list-peoples li.list-people-body .l-guests .people-info {
+	width: calc(100% - 44px);
+	float: left;
+	position: relative;
+	padding-left: 10px;
+}
+.list-peoples li.list-people-body .l-guests .people-info .name {
+	font-size: 14px;
+	color: #006cd8;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 82%;
+    margin: 0 0 6px 0;
+    border: 0;
+}
+.list-peoples li.list-people-body .l-guests .people-info .info span {
+	font-size: 20px;
+    margin: 0 6px 0 0;
+}
+.list-peoples li.list-people-body .l-guests .people-info .badge {
+	position: absolute;
+	right: -3px;
+	top: -3px;
+	padding: 5px 12px !important;
+}
+.list-peoples li.list-people-body p {
+	font-size: 14px;
+	border-bottom: 1px dotted #455964;
+	color: #455964;
+	margin-top: 10px;
+}
+.list-peoples .l-action {
+	width: 60px;
+	display: none;
+}
+.list-peoples ul li:hover .l-action {
+	display: block;
+}
+.list-peoples .l-action button {
+	background: transparent;
+	border: 0;
+	margin: 7px 2px 0;
+	padding: 3px;
+}
+.list-peoples .l-action button span {
+	font-size: 18px;
+	color: #8aa4c7;
+}
+.list-peoples .l-action button span.ws-ws_delete {
+	color: #e9262e;
+}
+
+.list-people-choose {
+	margin: 15px 0 0 0;
+	min-height: 34px;
+}
+.list-people-choose button{
+	margin: 0 10px 0 0;
+	height: 34px;
+	border-radius: 0;
+    padding: 0 10px;
+    background-color: #fff;
+    color: #455964;
+    width: 120px;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 5px 10px 5px 0;
+}
+.list-people-choose button p {
+	margin: 0;
+	display: inline-block;
+	font-size: 14px;
+}
+.list-people-choose button span:before {
+	color: #8aa4c7;
+	font-weight: normal;
+}
+.list-people-choose button span.ws-ws_caret-up {
+	float: right;
+	font-size: 18px;
+}
+.list-people-choose button:hover,
+.list-people-choose button:focus {
+	background-color: #fff;
+	color: #455964;
+}
+.list-people-choose .btn-group .dropdown-toggle {
+	border: 1px solid rgb(200, 213, 230) !important;
+}
+.list-people-choose .group-dropdown-menu-selected {
+	display: inline-block;	
+	position: relative;
+}
+.list-people-choose .group-dropdown-menu-selected .dropdown-menu-selected {
+	top: calc(100% - 5px);
+}
+.list-people-choose .group-dropdown-menu-selected button {
+	border: 1px solid rgb(200, 213, 230) !important;
+}
+.list-people-choose ul {
+	padding: 5px 0px;
+	min-width: 180px;
+}
+.list-people-choose ul li {
+	text-align: right;
+	margin-bottom: 4px !important;
+	padding: 0 10px;
+}
+.list-people-choose ul li p{
+	margin: 0;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 22px;
+}
+.list-people-choose ul li label .label-checkbox{
+	position: relative;
+    top: 6px;
+    margin-left: 5px;
+}
+.list-people-choose ul li.circle-add {
+	text-align: right;
+}
+.list-people-choose ul li.circle-add button {
+    margin: 0;
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    width: 22px;
+    height: 22px;
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+    color: #8aa4c7;
+}
+.list-people-choose ul li.circle-add button {
+    margin: 0;
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    width: 22px;
+    height: 22px;
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+    color: #8aa4c7;
+    position: relative;
+    top: 2px;
 }

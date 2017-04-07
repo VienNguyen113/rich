@@ -4,6 +4,29 @@
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.menu-auto .next-menu .ws-ws_caret-up {
+		display: none;
+	}
+	.menu-auto .menu-sublink-wrapper>a {
+		font-size: 16px;
+		color: #8BA5C6 !important;
+	}
+	.menu-auto .menu-sublink-wrapper>a:hover {
+		background: transparent;
+		color: #8BA5C6;
+	}
+	.menu-auto .next-menu a {
+		padding: 6px 15px 6px 25px !important;
+	}
+	.menu-auto .next-submenu a {
+		padding: 6px 15px 6px 35px !important;
+	}
+	.menu-auto .menu-sublink-wrapper img {
+		margin: 0 !important;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.manually-modal .modal-content {
 		padding: 0;

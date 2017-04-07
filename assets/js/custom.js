@@ -10,7 +10,17 @@ $(document).ready(function() {
 	})
 
 	$('.btn-dropdown-menu-selected').on('click', function (event) {
-	    $(this).parent().toggleClass("open");
+		$(this).parent().toggleClass("open");
+	});
+
+	$('.menu-sublink-wrapper').on('mouseover', function (event) {
+		var w = $(window).width();
+		if (w >= 768) 
+			$(this).addClass("active");
+	});
+	$('.menu-sublink-wrapper').on('mouseleave', function (event) {
+		$(this).removeClass("active");
+		$(this).find('.menu-sublink-wrapper').removeClass("active");
 	});
 })
 

@@ -1,869 +1,900 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>List People</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/font-icomoon.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/owl.carousel/assets/owl.carousel.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-daterangepicker/daterangepicker.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-tour/css/bootstrap-tour.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>List People</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-icomoon.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/owl.carousel/assets/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-tour/css/bootstrap-tour.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-media.css">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto" rel="stylesheet">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body class="body-wrapper version3">
 	<div class="wrapper main-wrapper">
-    <!-- HEADER -->
-    <div class="header clearfix headerV2">
-      <!-- TOPBAR -->
-      <div class="topBar">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 hidden-sm hidden-xs">
-              <ul class="list-inline">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
-              </ul>
-            </div>
-            <div class="col-md-6 col-xs-12">
-              <ul class="list-inline pull-right top-right">
-                <li class="account-login"><span><a data-toggle="modal" href='.login-modal'>Log in</a><small>or</small><a data-toggle="modal" href='#partner'>Become a Partner</a></span></li>
-                <li class="searchBox">
-                  <a href="#"><i class="fa fa-search"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li>
-                      <span class="input-group">
-                        <input type="text" class="form-control" placeholder="Search…" aria-describedby="basic-addon2">
-                        <button type="submit" class="input-group-addon">Submit</button>
-                      </span>
-                    </li>
-                  </ul>
-                </li>
-                <li class="language"><span><a data-toggle="modal" href='#lang'>EN</a></span></li>
-              </ul>
-            </div>
-          </div>
-        </div>    
-      </div>
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-main navbar-default nav-V2" role="navigation">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only"><!-- Toggle navigation --></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index-v1.html"><img src="assets/img/app-logo-v2.svg" alt="logo"></a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse">            
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown megaDropMenu active">
-                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planning</a>
-                <ul class="dropdown-menu row">
-                  <li class="col-sm-4 col-xs-12">
-                    <ul class="list-unstyled">
-                      <li>Events &amp; Tasks</li>
-                      <li><a href="planning.html">Tasks</a></li>
-                      <li><a href="honeymoon.html">Honeymoon</a></li>
-                      <li class="listHeading">Financials</li>
-                      <li><a href="budget.html">Budget</a></li>
-                      <li><a href="finance.html">Funding</a></li>
-                    </ul>
-                  </li>
-                  <li class="col-sm-4 col-xs-12">
-                    <ul class="list-unstyled">
-                      <li>Invitations</li>
-                      <li><a href="invitations-empty.html">Invitee list</a></li>
-                      <li><a href="cards-empty.html">Invitation Cards</a></li>
-                      <li><a href="seating-empty.html">Seating</a></li>
-                      <li><a href="wedsite.html">Wedsite</a></li>
-                    </ul>
-                  </li>
-                  <li class="col-sm-3 col-xs-12">
-                    <a href="#" class="menu-photo"><img src="assets/img/img-planning-large.jpg" class="img-responsive img-thumbnail" alt="menu-img"></a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store</a>
-                <ul class="dropdown-menu dropdown-menu-left">
-                  <li><a href="store-catalog.html">Catalog of Services</a></li>
-                  <li><a href="store-registry.html">Gift Registry</a></li>
-                </ul>
-              </li>
+		<!-- HEADER -->
+		<div class="header clearfix headerV2">
+			<!-- TOPBAR -->
+			<div class="topBar">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 hidden-sm hidden-xs">
+							<ul class="list-inline">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<ul class="list-inline pull-right top-right">
+								<li class="account-login"><span><a data-toggle="modal" href='.login-modal'>Log in</a><small>or</small><a data-toggle="modal" href='#partner'>Become a Partner</a></span></li>
+								<li class="searchBox">
+									<a href="#"><i class="fa fa-search"></i></a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li>
+											<span class="input-group">
+												<input type="text" class="form-control" placeholder="Search…" aria-describedby="basic-addon2">
+												<button type="submit" class="input-group-addon">Submit</button>
+											</span>
+										</li>
+									</ul>
+								</li>
+								<li class="language"><span><a data-toggle="modal" href='#lang'>EN</a></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>    
+			</div>
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-main navbar-default nav-V2" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only"><!-- Toggle navigation --></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index-v1.html"><img src="assets/img/app-logo-v2.svg" alt="logo"></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">            
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown megaDropMenu active">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planning</a>
+								<ul class="dropdown-menu row">
+									<li class="col-sm-4 col-xs-12">
+										<ul class="list-unstyled">
+											<li>Events &amp; Tasks</li>
+											<li><a href="planning.html">Tasks</a></li>
+											<li><a href="honeymoon.html">Honeymoon</a></li>
+											<li class="listHeading">Financials</li>
+											<li><a href="budget.html">Budget</a></li>
+											<li><a href="finance.html">Funding</a></li>
+										</ul>
+									</li>
+									<li class="col-sm-4 col-xs-12">
+										<ul class="list-unstyled">
+											<li>Invitations</li>
+											<li><a href="invitations-empty.html">Invitee list</a></li>
+											<li><a href="cards-empty.html">Invitation Cards</a></li>
+											<li><a href="seating-empty.html">Seating</a></li>
+											<li><a href="wedsite.html">Wedsite</a></li>
+										</ul>
+									</li>
+									<li class="col-sm-3 col-xs-12">
+										<a href="#" class="menu-photo"><img src="assets/img/img-planning-large.jpg" class="img-responsive img-thumbnail" alt="menu-img"></a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store</a>
+								<ul class="dropdown-menu dropdown-menu-left">
+									<li><a href="store-catalog.html">Catalog of Services</a></li>
+									<li><a href="store-registry.html">Gift Registry</a></li>
+								</ul>
+							</li>
 
-              <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="assets/img/invitee-avatar.jpg" alt="" class="img-circle img-thumbnail img-avatar">
-                <!-- My Account -->
-                <!-- <i class="fa fa-user"></i> -->
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                  <li><a href="dashboard.html">Dashboard</a></li>
-                  <li><a href="profile.html">Profile</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-          
-          <div class="dropdown cart-dropdown">
-            <a class="shop-cart" data-toggle="modal" href="#cart">
-              <i class="fa fa-shopping-cart"></i>
-              <span class="badge">3</span>
-            </a>
-          </div>
-          
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<img src="assets/img/invitee-avatar.jpg" alt="" class="img-circle img-thumbnail img-avatar">
+								<!-- My Account -->
+								<!-- <i class="fa fa-user"></i> -->
+								</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="dashboard.html">Dashboard</a></li>
+									<li><a href="profile.html">Profile</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+					
+					<div class="dropdown cart-dropdown">
+						<a class="shop-cart" data-toggle="modal" href="#cart">
+							<i class="fa fa-shopping-cart"></i>
+							<span class="badge">3</span>
+						</a>
+					</div>
+					
 
-        </div>
-      </nav>
-    </div>
+				</div>
+			</nav>
+		</div>
 			
 		<section class="mainContent dashboard clearfix">
-      <div class="container">
+			<div class="container">
 				<div class="row">
-          <div class="col-lg-3">
-          	<div class="white-boxes">
-          		<div class="sidebar">
-          			<!-- WedBox Profile box -->
-          			<div class="wedbox profile-box" id="profile-box">
-          				<div role="presentation" class="dropdown profile-photo">
-          					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          						<img class="img-responsive" src="assets/img/profile-cover.jpg" alt="">
-          						<span class="badge">
-          							<h5>268</h5>
-          							<span>days</span>
-          						</span>
-          					</a>
-          					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          						<li>Logged in as <h4>First name Last Name</h4></li>
-          						<li></li>
-          						<li><a class="btn btn-primary center-block" href="profile.html">Profile Update</a></li>
-          						
-          						<li><a class="btn btn-primary center-block" href="logout.html">Logout</a></li>
-          					</ul>
-          				</div>
-          				<div class="wedbox-content">
-          					<div class="row">
-          						<div class="col-md-12 content-wrapper">
-          							<div class="widget-listings">
-          								<div class="listing couple-name">
-          									Samir &amp; Maya
-          									<div class="wedding-type">
-          										Civil Marriage
-          									</div>
-          								</div>
-          							</div>
-          						</div>
-          					</div>
-          				</div>
-          			</div>
-          			
-          			<div class="wedding-interval">
-          				<strong>6 to 4 more months</strong> <span>until wedding</span>
-          			</div>
-          		</div>
-          	</div>
-          </div>
+					<div class="col-lg-3">
+						<div class="white-boxes">
+							<div class="sidebar">
+								<!-- WedBox Profile box -->
+								<div class="wedbox profile-box" id="profile-box">
+									<div role="presentation" class="dropdown profile-photo">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+											<img class="img-responsive" src="assets/img/profile-cover.jpg" alt="">
+											<span class="badge">
+												<h5>268</h5>
+												<span>days</span>
+											</span>
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+											<li>Logged in as <h4>First name Last Name</h4></li>
+											<li></li>
+											<li><a class="btn btn-primary center-block" href="profile.html">Profile Update</a></li>
+											
+											<li><a class="btn btn-primary center-block" href="logout.html">Logout</a></li>
+										</ul>
+									</div>
+									<div class="wedbox-content">
+										<div class="row">
+											<div class="col-md-12 content-wrapper">
+												<div class="widget-listings">
+													<div class="listing couple-name">
+														Samir &amp; Maya
+														<div class="wedding-type">
+															Civil Marriage
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="wedding-interval">
+									<strong>6 to 4 more months</strong> <span>until wedding</span>
+								</div>
+								
+								<ul class="sidebar-link">
+									<li class="sidebar-link-header">Invitations</li>
+									<li><a href="#">Invitation Card <span class="ws-ws_caret-up iconRotate90"></span></a></li>
+									<li><a href="#" class="active">Invitees <span class="ws-ws_caret-up iconRotate90"></span></a></li>
+									<li><a href="#">Seating <span class="ws-ws_caret-up iconRotate90"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
 					<div class="col-lg-9">
-            <!-- LIST PEOPPLE -->
-            <div class="subpage-content-container">
-              <div class="subpage-title clearfix">
-                <h2>Invitees</h2>
-                <div class="badge badgeLightBlue">7</div>
+						<!-- LIST PEOPPLE -->
+						<div class="subpage-content-container">
+							<div class="subpage-title clearfix">
+								<h2>Invitees</h2>
+								<div class="badge badgeLightBlue">7</div>
 
-                <div class="btn-group">
-                  <button class="btn bgBlue">Add Invitees</button>
-                  <button type="button" class="btn bgBlue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownAddInvitees">
-                    <span class="fa fa-chevron-down"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownAddInvitees">
-                    <li><a data-toggle="modal" href='.manually-modal'>Add manually</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a data-toggle="modal" href='.invite-facebook-modal'>Invite from Facebook</a></li>
-                    <li><a href="#">Invite from Google+</a></li>
-                    <li><a href="#">Phone contacts</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Upload spreadsheet</a></li>
-                    <li><a href="#">Download template</a></li>
-                  </ul>
-                </div>
-              </div>
+								<div class="btn-group">
+									<button class="btn bgBlue">Add Invitees</button>
+									<button type="button" class="btn bgBlue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownAddInvitees">
+										<span class="fa fa-chevron-down"></span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownAddInvitees">
+										<li><a data-toggle="modal" href='.manually-modal'>Add manually</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a data-toggle="modal" href='.invite-facebook-modal'>Invite from Facebook</a></li>
+										<li><a href="#">Invite from Google+</a></li>
+										<li><a href="#">Phone contacts</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">Upload spreadsheet</a></li>
+										<li><a href="#">Download template</a></li>
+									</ul>
+								</div>
+							</div>
 
-              <div class="subpage-content">
-                <div class="list-people-content">
-                  <div class="list-people-statistic clearfix">
-                    <div class="statistic-circle hidden-xs hidden-sm col-md-9">
-                      <div class="statistic statistic-danger circle-size-2">2</div>
-                      <div class="statistic statistic-warning circle-size-3">3</div>
-                      <div class="statistic statistic-success circle-size-4">4</div>
-                      <div class="statistic statistic-primary circle-size-1">1</div>
-                    </div>
-                    <div class="statistic-rectangle pullRight col-sm-4 col-md-3">
-                      <div class="statistic statistic-warning">
-                        3 Groom's colugues
-                      </div>
-                      <div class="statistic statistic-danger">
-                        2 Groom's friends
-                      </div>
-                      <div class="statistic statistic-primary">
-                        1 Groom's family
-                      </div>
-                      <div class="statistic statistic-success">
-                        4 Mutual friends
-                      </div>
-                    </div>
-                  </div>
-                  <div class="list-people-search">
-                    <div class="search-area">
-                      <div class="l-selected"><span class="ws-ws_calendar">Wedding</span><span class="ws-ws_cancel l-cancel"></span></div>
-                      <div class="l-selected"><span class="ws-ws_calendar">Wedding</span><span class="ws-ws_cancel l-cancel"></span></div>
+							<div class="subpage-content">
+								<div class="list-people-content">
+									<div class="list-people-statistic clearfix">
+										<div class="statistic-circle hidden-xs hidden-sm col-md-9">
+											<div class="statistic statistic-danger circle-size-2">2</div>
+											<div class="statistic statistic-warning circle-size-3">3</div>
+											<div class="statistic statistic-success circle-size-4">4</div>
+											<div class="statistic statistic-primary circle-size-1">1</div>
+										</div>
+										<div class="statistic-rectangle pullRight col-sm-4 col-md-3">
+											<div class="statistic statistic-warning">
+												3 Groom's colugues
+											</div>
+											<div class="statistic statistic-danger">
+												2 Groom's friends
+											</div>
+											<div class="statistic statistic-primary">
+												1 Groom's family
+											</div>
+											<div class="statistic statistic-success">
+												4 Mutual friends
+											</div>
+										</div>
+									</div>
+									<div class="list-people-search">
+										<div class="search-area">
+											<div class="l-selected"><span class="ws-ws_calendar">Wedding</span><span class="ws-ws_cancel l-cancel"></span></div>
+											<div class="l-selected"><span class="ws-ws_calendar">Wedding</span><span class="ws-ws_cancel l-cancel"></span></div>
 
-                      <span class="ws-ws_search"></span>
-                      <input type="text" placeholder="Search">
-                    </div>
-                    <ul class="l-auto-complete">
-                      <li class="s-key"><span class="ws-ws_search">Search "w"</span></li>
-                      <li class="s-result"><span class="ws-ws_calendar">Wedding</span></li>
-                    </ul>
-                  </div>
-                  <div class="list-peoples">
-                    <ul>
-                      <li class="list-people-header clearfix">
-                        <div class="l-input">
-                          <label for="list-all">
-                            <input type="checkbox" class="custom-checkbox" id="list-all">
-                            <span class="label-checkbox label-checkbox-plus"></span>
-                          </label>
-                        </div>
-                        <div class="l-guests">
-                          <p>Guests</p>
-                        </div>
-                        <div class="l-events">
-                          <p>Events</p>
-                        </div>
-                        <div class="l-circles">
-                          <p>Circles</p>
-                        </div>
-                        <div class="l-invitation">
-                          <select name="" id="">
-                            <option value="">Invitation</option>
-                            <option value="">E-card</option>
-                          </select>
-                        </div>
-                        <div class="l-action">
-                        </div>
-                      </li>
-                      <li class="list-people-body clearfix">
-                        <div class="l-input">
-                          <label for="list-1">
-                            <input type="checkbox" class="custom-checkbox" id="list-1">
-                            <span class="label-checkbox"></span>
-                          </label>
-                        </div>
-                        <div class="l-guests">
-                          <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                          <div class="people-info">
-                            <p class="name">Mr. John Williams</p>
-                            <div class="info">
-                              <a href="" class="p-phone"><span class="ws-ws_phone"></span></a>
-                              <a href="" class="p-email"><span class="ws-ws_email"></span></a>
-                              <a href="" class="p-address"><span class="ws-ws_address"></span></a>
-                              <a href="" class="p-comment"><span class="ws-ws_comment"></span></a>
-                            </div>
-                            <div class="badge badgeLightBlue">+1</div>
-                          </div>
-                        </div>
-                        <div class="l-events">
-                          <p>Engagement, Wedding</p>
-                        </div>
-                        <div class="l-circles">
-                          <p>Groom's colegues</p>
-                        </div>
-                        <div class="l-invitation">
-                          <p>E-card</p>
-                        </div>
-                        <div class="l-action">
-                          <button><span class="ws-ws_edit"></span></button>
-                          <button><span class="ws-ws_delete"></span></button>
-                        </div>
-                      </li>
-                      <li class="list-people-body clearfix">
-                        <div class="l-input">
-                          <label for="list-2">
-                            <input type="checkbox" class="custom-checkbox" id="list-2">
-                            <span class="label-checkbox"></span>
-                          </label>
-                        </div>
-                        <div class="l-guests">
-                          <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                          <div class="people-info">
-                            <p class="name">Mr. Mark Jones</p>
-                            <div class="info">
-                              <a href="" class="p-phone"><span class="ws-ws_phone"></span></a>
-                              <a href="" class="p-email"><span class="ws-ws_email"></span></a>
-                              <a href="" class="p-address"><span class="ws-ws_address"></span></a>
-                              <a href="" class="p-comment"><span class="ws-ws_comment"></span></a>
-                            </div>
-                            <div class="badge badgeLightBlue">+7</div>
-                          </div>
-                        </div>
-                        <div class="l-events">
-                          <p>Engagement</p>
-                        </div>
-                        <div class="l-circles">
-                          <p>Groom's friends</p>
-                        </div>
-                        <div class="l-invitation">
-                          <p>Regular card</p>
-                        </div>
-                        <div class="l-action">
-                          <button><span class="ws-ws_edit"></span></button>
-                          <button><span class="ws-ws_delete"></span></button>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		  </div>
-	  </section>
+											<span class="ws-ws_search"></span>
+											<input type="text" placeholder="Search">
+										</div>
+										<ul class="l-auto-complete">
+											<li class="s-key"><span class="ws-ws_search">Search "w"</span></li>
+											<li class="s-result"><span class="ws-ws_calendar">Wedding</span></li>
+										</ul>
+									</div>
+									
+									<div class="list-peoples">
+										<ul>
+											<li class="list-people-header clearfix">
+												<div class="l-input">
+													<label for="list-all">
+														<input type="checkbox" class="custom-checkbox " id="list-all">
+														<span class="label-checkbox "></span>
+													</label>
+												</div>
+												<div class="l-guests">
+													<p>Guests</p>
+												</div>
+												<div class="l-events">
+													<p>Events</p>
+												</div>
+												<div class="l-circles">
+													<p>Circles</p>
+												</div>
+												<div class="l-invitation">
+													<select name="" id="">
+														<option value="">Invitation</option>
+														<option value="">E-card</option>
+													</select>
+												</div>
+												<div class="l-action">
+												</div>
+											</li>
+											<li class="list-people-body clearfix">
+												<div class="l-input">
+													<label for="list-1">
+														<input type="checkbox" class="custom-checkbox" id="list-1" checked="checked">
+														<i class="l-overlay"></i>
+														<span class="label-checkbox"></span>
+													</label>
+												</div>
+												<div class="l-guests">
+													<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+													<div class="people-info">
+														<p class="name">Mr. John Williams</p>
+														<div class="info">
+															<a href="" class="p-phone active" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><span class="ws-ws_phone"></span></a>
+															<a href="" class="p-email active" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><span class="ws-ws_email"></span></a>
+															<a href="" class="p-address" data-toggle="tooltip" data-placement="top" title=""><span class="ws-ws_address"></span></a>
+															<a href="" class="p-comment" data-toggle="tooltip" data-placement="top" title=""><span class="ws-ws_comment"></span></a>
+														</div>
+														<div class="badge badgeLightBlue">+1</div>
+													</div>
+												</div>
+												<div class="l-events">
+													<p>Engagement, Wedding</p>
+												</div>
+												<div class="l-circles">
+													<p>Groom's colegues</p>
+												</div>
+												<div class="l-invitation">
+													<p>E-card</p>
+												</div>
+												<div class="l-action">
+													<button><span class="ws-ws_edit"></span></button>
+													<button><span class="ws-ws_delete"></span></button>
+												</div>
+											</li>
+											<li class="list-people-body clearfix">
+												<div class="l-input">
+													<label for="list-2">
+														<input type="checkbox" class="custom-checkbox" id="list-2">
+														<i class="l-overlay"></i>
+														<span class="label-checkbox"></span>
+													</label>
+												</div>
+												<div class="l-guests">
+													<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+													<div class="people-info">
+														<p class="name">Mr. Mark Jones</p>
+														<div class="info">
+															<a href="" class="p-phone active" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><span class="ws-ws_phone"></span></a>
+															<a href="" class="p-email active" data-toggle="tooltip" data-placement="top" title="Tooltip on top"><span class="ws-ws_email"></span></a>
+															<a href="" class="p-address" data-toggle="tooltip" data-placement="top" title=""><span class="ws-ws_address"></span></a>
+															<a href="" class="p-comment" data-toggle="tooltip" data-placement="top" title=""><span class="ws-ws_comment"></span></a>
+														</div>
+														<div class="badge badgeLightBlue">+7</div>
+													</div>
+												</div>
+												<div class="l-events">
+													<p>Engagement</p>
+												</div>
+												<div class="l-circles">
+													<p>Groom's friends</p>
+												</div>
+												<div class="l-invitation">
+													<p>Regular card</p>
+												</div>
+												<div class="l-action">
+													<button><span class="ws-ws_edit"></span></button>
+													<button><span class="ws-ws_delete"></span></button>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- FOOTER -->
-    <div class="footer clearfix">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2 col-xs-12">
-            <div class="footerLink">
-              <h5>Support</h5>
-              <ul class="list-unstyled">
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Chat with us</a></li>
-                <li><a href="">Call Assitance</a></li>
-                <li><a href="">Call Webmaster</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-2 col-xs-12">
-            <div class="footerLink">
-              <h5>Info</h5>
-              <ul class="list-unstyled">
-                <li><a href="">Terms and Conditions</a></li>
-                <li><a href="">About Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-2 col-xs-12">
-            <div class="footerLink">
-              <h5>Predictions &amp; Luck</h5>
-              <ul class="list-unstyled">
-                <li><a href="">Horoscope &amp; Compatiblity</a></li>
-                <li><a href="">Enter Draw</a></li>
-              </ul>
-            </div>
-          </div>
-    
-          <div class="col-sm-2 col-xs-12">
-            <div class="footerLink">
-              <h5>Follow Us</h5>
-              <ul class="list-inline">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
-              </ul>
-            </div>
-          </div>
-    
-          <div class="col-sm-2 col-xs-12">
-            <div class="footerLink">
-              <h5>Suppliers</h5>
-              <ul class="list-unstyled">
-                <li><a href="">Partner With Us</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Terms &amp; Conditions</a></li>
-                <li><a href="">Supplier Login</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<!-- FOOTER -->
+		<div class="footer clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 col-xs-12">
+						<div class="footerLink">
+							<h5>Support</h5>
+							<ul class="list-unstyled">
+								<li><a href="">FAQ</a></li>
+								<li><a href="">Chat with us</a></li>
+								<li><a href="">Call Assitance</a></li>
+								<li><a href="">Call Webmaster</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-12">
+						<div class="footerLink">
+							<h5>Info</h5>
+							<ul class="list-unstyled">
+								<li><a href="">Terms and Conditions</a></li>
+								<li><a href="">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2 col-xs-12">
+						<div class="footerLink">
+							<h5>Predictions &amp; Luck</h5>
+							<ul class="list-unstyled">
+								<li><a href="">Horoscope &amp; Compatiblity</a></li>
+								<li><a href="">Enter Draw</a></li>
+							</ul>
+						</div>
+					</div>
+		
+					<div class="col-sm-2 col-xs-12">
+						<div class="footerLink">
+							<h5>Follow Us</h5>
+							<ul class="list-inline">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+							</ul>
+						</div>
+					</div>
+		
+					<div class="col-sm-2 col-xs-12">
+						<div class="footerLink">
+							<h5>Suppliers</h5>
+							<ul class="list-unstyled">
+								<li><a href="">Partner With Us</a></li>
+								<li><a href="">FAQ</a></li>
+								<li><a href="">Terms &amp; Conditions</a></li>
+								<li><a href="">Supplier Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- COPY RIGHT -->
-    <div class="copyRight clearfix">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7 col-xs-12">
-            <p>Copyright Company name 2016. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+		<!-- COPY RIGHT -->
+		<div class="copyRight clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7 col-xs-12">
+						<p>Copyright Company name 2016. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  </div>
-  <!-- modal and other off-canvas includes -->
-    
+	</div>
+	<!-- modal and other off-canvas includes -->
 
-  <!-- MANUALLY MODAL -->
-  <div class="modal fade manually-modal in" id="manuallyModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <form action="">
-            <h1>Add Invitee Manually</h1>
-            <div class="area-avatar">
-              <img src="assets/img/invitee-avatar.jpg" alt="" class="img-thumbnail img-avatar">
-              <span class="number">+1</span>
-            </div>
+	<!-- MANUALLY MODAL -->
+	<div class="modal fade manually-modal in" id="manuallyModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<form action="">
+						<h1>Add Invitee Manually</h1>
+						<div class="area-avatar">
+							<div class="wrap-avatar">
+								<img src="assets/img/invitee-avatar.jpg" alt="" class="img-thumbnail img-avatar">
+								<input type="file">
+							</div>
+							<span class="number">+1</span>
+						</div>
 
-            <div class="form-group clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Full name:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <input type="text">
-              </div>
-            </div>
+						<div class="form-group clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Full name:</label>
+							</div>
+							<div class="form-full-name col-xs-10 col-sm-10">
+								<div class="gender">
+									<select name="" id="">
+										<option value="">Mr.</option>
+										<option value="">Ms.</option>
+									</select>
+								</div>
+								<div class="fullname">
+									<input type="text">
+									<select name="" id="">
+										<option value="">+1 guest</option>
+										<option value="">+2 guest</option>
+										<option value="">+3 guest</option>
+										<option value="">+4 guest</option>
+										<option value="">+5 guest</option>
+										<option value="">+6 guest</option>
+										<option value="">+7 guest</option>
+										<option value="">+8 guest</option>
+										<option value="">+9 guest</option>
+									</select>
+								</div>
+							</div>
+						</div>
 
-            <div class="form-group clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Place with:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <select name="" id="">
-                  <option value="">optional</option>
-                  <option value="">optional</option>
-                  <option value="">optional</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Circles:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <select name="" id="">
-                  <option value="">Groom's colegues, Bride's family</option>
-                  <option value="">optional</option>
-                  <option value="">optional</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Events:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <select name="" id="">
-                  <option value="">Engagement, Wedding</option>
-                  <option value="">optional</option>
-                  <option value="">optional</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group form-w-50 clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Invitation:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <select name="" id="">
-                  <option value="">E-card</option>
-                  <option value="">optional</option>
-                  <option value="">optional</option>
-                </select>
-              </div>
-            </div>
-            <br />
-            <br />
-            <div class="form-group clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Email:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <input type="text">
-              </div>
-            </div>
-            <div class="form-group form-w-50 clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Phone:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <input type="text">
-              </div>
-            </div>
-            <div class="form-group clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Full Address:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <input type="text">
-              </div>
-            </div>
-            <div class="form-group clearfix">
-              <div class="col-xs-2 col-sm-2">
-                <label for="">Note:</label>
-              </div>
-              <div class="col-xs-10 col-sm-10">
-                <textarea name="" id="" rows="4"></textarea>
-              </div>
-            </div>
-            <div class="form-group form-button clearfix">
-              <div class="col-xs-offset-2 col-sm-offset-2 col-xs-10 col-sm-10">
-                <button class="btn bgBlue">Add</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+						<div class="form-group clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Place with:</label>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+								<select name="" id="">
+									<option value="">optional</option>
+									<option value="">optional</option>
+									<option value="">optional</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Circles:</label>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+								<select name="" id="">
+									<option value="">Groom's colegues, Bride's family</option>
+									<option value="">optional</option>
+									<option value="">optional</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Events:</label>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+								<select name="" id="">
+									<option value="">Engagement, Wedding</option>
+									<option value="">optional</option>
+									<option value="">optional</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group form-w-50 clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Invitation:</label>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+								<select name="" id="">
+									<option value="">E-card</option>
+									<option value="">optional</option>
+									<option value="">optional</option>
+								</select>
+							</div>
+						</div>
+						<br />
+						<br />
+						<div class="form-group clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Email:</label>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+								<input type="text">
+							</div>
+						</div>
+						<div class="form-group form-w-50 clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Phone:</label>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+								<input type="text">
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Full Address:</label>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+								<input type="text">
+							</div>
+						</div>
+						<div class="form-group clearfix">
+							<div class="col-xs-2 col-sm-2">
+								<label for="">Note:</label>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+								<textarea name="" id="" rows="4"></textarea>
+							</div>
+						</div>
+						<div class="form-group form-button clearfix">
+							<div class="col-xs-offset-2 col-sm-offset-2 col-xs-10 col-sm-10">
+								<button class="btn bgBlue">Add</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <!-- INVITE FACEBOOK MODAL -->
-  <div class="modal fade invite-facebook-modal in" id="inviteFacekbookModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <h1>Select Friends You Want to Add</h1>
-          <div class="row list-friends">
-            <div class="col-xs-6 col-sm-6">
-              <div class="friend">
-                <label for="friend1">
-                  <input type="checkbox" id="friend1"/>
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend2">
-                  <input type="checkbox" id="friend2" checked="checked" />
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend3">
-                  <input type="checkbox" id="friend3"/>
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend4">
-                  <input type="checkbox" id="friend4"/>
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend5">
-                  <input type="checkbox" id="friend5" checked="checked" />
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend6">
-                  <input type="checkbox" id="friend6"/>
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6">
-              <div class="friend">
-                <label for="friend7">
-                  <input type="checkbox" id="friend7"/>
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend8">
-                  <input type="checkbox" id="friend8"/>
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend9">
-                  <input type="checkbox" id="friend9" checked="checked" />
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend10">
-                  <input type="checkbox" id="friend10"/>
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend11">
-                  <input type="checkbox" id="friend11" checked="checked" />
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-              <div class="friend">
-                <label for="friend12">
-                  <input type="checkbox" id="friend12"/>
-                  <span class="label-checkbox"></span>
-                  <img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
-                  <p>Mary Johnson</p>
-                </label>
-              </div>
-            </div>
-          </div>
-          <button class="btn bgBlue">Add 4 People</button>
-        </div>
-      </div>
-    </div>
-  </div>
+	<!-- INVITE FACEBOOK MODAL -->
+	<div class="modal fade invite-facebook-modal in" id="inviteFacekbookModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h1>Select Friends You Want to Add</h1>
+					<div class="row list-friends">
+						<div class="col-xs-6 col-sm-6">
+							<div class="friend">
+								<label for="friend1">
+									<input type="checkbox" id="friend1"/>
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend2">
+									<input type="checkbox" id="friend2" checked="checked" />
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend3">
+									<input type="checkbox" id="friend3"/>
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend4">
+									<input type="checkbox" id="friend4"/>
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend5">
+									<input type="checkbox" id="friend5" checked="checked" />
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend6">
+									<input type="checkbox" id="friend6"/>
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6">
+							<div class="friend">
+								<label for="friend7">
+									<input type="checkbox" id="friend7"/>
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend8">
+									<input type="checkbox" id="friend8"/>
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend9">
+									<input type="checkbox" id="friend9" checked="checked" />
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend10">
+									<input type="checkbox" id="friend10"/>
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend11">
+									<input type="checkbox" id="friend11" checked="checked" />
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+							<div class="friend">
+								<label for="friend12">
+									<input type="checkbox" id="friend12"/>
+									<span class="label-checkbox"></span>
+									<img src="assets/img/invitee-avatar.jpg" alt="" class="img-avatar">
+									<p>Mary Johnson</p>
+								</label>
+							</div>
+						</div>
+					</div>
+					<button class="btn bgBlue">Add 4 People</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <!-- LOGIN MODAL -->
-  <div class="modal fade login-modal" id="login" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h3 class="modal-title">log in</h3>
-        </div>
-        <div class="modal-body">
-        <div class="row">
-          <div class="col-xs-6">
-            <form action="" method="POST" role="form">
-              <div class="form-group">
-                <label for="">Enter Email</label>
-                <input type="email" class="form-control" id="">
-              </div>
-              <div class="form-group">
-                <label for="">Password</label>
-                <input type="password" class="form-control" id="">
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Remember Me
-                </label>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">log in</button>
-              <button type="button" class="btn btn-link btn-block">Forgot Password?</button>
-            </form>
-          </div>
-          <div class="col-xs-6">
-            <p class="lead"><small>not a member yet? </small>Signup Now for <span class="text-highlight">FREE</span></p>
-            <ul class="list-unstyled" style="line-height: 2">
-                <li><span class="fa fa-check text-highlight"></span> See all your orders</li>
-                <li><span class="fa fa-check text-highlight"></span> Fast re-order</li>
-                <li><span class="fa fa-check text-highlight"></span> Save your favorites</li>
-                <li><span class="fa fa-check text-highlight"></span> Get a welcome gift <small>Upon Signup</small></li>
-            </ul>
-            <p class="lead">Or Become a <span class="text-highlight">Partner</span></p>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-    
-  <!-- PARTNER MODAL -->
-  <div class="modal fade partner-modal" id="partner" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h3 class="modal-title">Become a Partner</h3>
-        </div>
-        <div class="modal-body">
-          Partner registration fields
-        </div>
-      </div>
-    </div>
-  </div>
-    
+	<!-- LOGIN MODAL -->
+	<div class="modal fade login-modal" id="login" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title">log in</h3>
+				</div>
+				<div class="modal-body">
+				<div class="row">
+					<div class="col-xs-6">
+						<form action="" method="POST" role="form">
+							<div class="form-group">
+								<label for="">Enter Email</label>
+								<input type="email" class="form-control" id="">
+							</div>
+							<div class="form-group">
+								<label for="">Password</label>
+								<input type="password" class="form-control" id="">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Remember Me
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">log in</button>
+							<button type="button" class="btn btn-link btn-block">Forgot Password?</button>
+						</form>
+					</div>
+					<div class="col-xs-6">
+						<p class="lead"><small>not a member yet? </small>Signup Now for <span class="text-highlight">FREE</span></p>
+						<ul class="list-unstyled" style="line-height: 2">
+								<li><span class="fa fa-check text-highlight"></span> See all your orders</li>
+								<li><span class="fa fa-check text-highlight"></span> Fast re-order</li>
+								<li><span class="fa fa-check text-highlight"></span> Save your favorites</li>
+								<li><span class="fa fa-check text-highlight"></span> Get a welcome gift <small>Upon Signup</small></li>
+						</ul>
+						<p class="lead">Or Become a <span class="text-highlight">Partner</span></p>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<!-- PARTNER MODAL -->
+	<div class="modal fade partner-modal" id="partner" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title">Become a Partner</h3>
+				</div>
+				<div class="modal-body">
+					Partner registration fields
+				</div>
+			</div>
+		</div>
+	</div>
+		
 
-  <!-- SIGN UP MODAL -->
-  <div class="modal fade" id="signup" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h3 class="modal-title">Create an account</h3>
-        </div>
-        <div class="modal-body">
-          <form action="" method="POST" role="form">
-            <div class="form-group">
-              <label for="">Enter Email</label>
-              <input type="email" class="form-control" id="">
-            </div>
-            <div class="form-group">
-              <label for="">Password</label>
-              <input type="password" class="form-control" id="">
-            </div>
-            <div class="form-group">
-              <label for="">Confirm Password</label>
-              <input type="password" class="form-control" id="">
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Sign up</button>
-          </form>  
-        </div>
-      </div>
-    </div>
-  </div>
-    
+	<!-- SIGN UP MODAL -->
+	<div class="modal fade" id="signup" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title">Create an account</h3>
+				</div>
+				<div class="modal-body">
+					<form action="" method="POST" role="form">
+						<div class="form-group">
+							<label for="">Enter Email</label>
+							<input type="email" class="form-control" id="">
+						</div>
+						<div class="form-group">
+							<label for="">Password</label>
+							<input type="password" class="form-control" id="">
+						</div>
+						<div class="form-group">
+							<label for="">Confirm Password</label>
+							<input type="password" class="form-control" id="">
+						</div>
+						<button type="submit" class="btn btn-primary btn-block">Sign up</button>
+					</form>  
+				</div>
+			</div>
+		</div>
+	</div>
+		
 
-  <!-- COUNTRY MODAL -->
-  <div class="modal fade" id="country" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h3 class="modal-title">Choose your Location</h3>
-          <div class="subtitle">This will change the country-specifc preferences</div>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-          	<div class="col-md-12">
-          		<img src="assets/img/locations.jpg" class="img-responsive" alt="">
-          	</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    
+	<!-- COUNTRY MODAL -->
+	<div class="modal fade" id="country" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title">Choose your Location</h3>
+					<div class="subtitle">This will change the country-specifc preferences</div>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="assets/img/locations.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
 
-  <!-- LANGUAGE MODAL -->
-  <div class="modal fade" id="lang" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h3 class="modal-title">Choose your language</h3>
-          <div class="subtitle">This will change the UI language</div>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-          	<div class="col-md-4">
-          		<ul>
-          			<li><a href="#">Deutsch</a></li>
-          			<li><a href="#">English</a></li>
-          			<li><a href="#">Español</a></li>
-          			<li><a href="#">Français</a></li>
-          			<li><a href="#">Italiano</a></li>
-          		</ul>
-          	</div>
-          	<div class="col-md-4">
-          		<ul>
-          			<li><a href="#">Dansk</a></li>
-          			<li><a href="#">Nederlands</a></li>
-          			<li><a href="#">Norsk</a></li>
-          			<li><a href="#">Polski</a></li>
-          			<li><a href="#">Português</a></li>
-          			<li><a href="#">Svenska</a></li>
-          			<li><a href="#">Русский</a></li>
-          		</ul>
-          	</div>
-          
-          	<div class="col-md-4">
-          		<ul>
-          			<li><a href="#">العربية</a></li>
-          			<li><a href="#">Türkçe</a></li>
-          			<li><a href="#">中文</a></li>
-          			<li><a href="#">日本語</a></li>
-          			<li><a href="#">한국어</a></li>
-          		</ul>
-          	</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-    
-  <!-- CART MODAL -->
-  <div class="modal fade" id="cart" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h3 class="modal-title">Item(s) in your cart</h3>
-          <div class="subtitle">&nbsp;</div>
-        </div>
-        <div class="modal-body">
-            <ul>
-              <li>
-                <a href="single-product.html">
-                  <div class="media">
-                    <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
-                    <div class="media-body">
-                      <h5 class="media-heading">ITEM 1 <br><span>2 X $499</span></h5>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="single-product.html">
-                  <div class="media">
-                    <img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
-                    <div class="media-body">
-                      <h5 class="media-heading">ITEM 2 <br><span>2 X $89</span></h5>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <div class="btn-group" role="group" aria-label="...">
-              <button type="button" class="btn btn-primary btn-block" onclick="location.href='checkout-step-1.html';">Checkout</button>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<!-- LANGUAGE MODAL -->
+	<div class="modal fade" id="lang" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title">Choose your language</h3>
+					<div class="subtitle">This will change the UI language</div>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-4">
+							<ul>
+								<li><a href="#">Deutsch</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Español</a></li>
+								<li><a href="#">Français</a></li>
+								<li><a href="#">Italiano</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul>
+								<li><a href="#">Dansk</a></li>
+								<li><a href="#">Nederlands</a></li>
+								<li><a href="#">Norsk</a></li>
+								<li><a href="#">Polski</a></li>
+								<li><a href="#">Português</a></li>
+								<li><a href="#">Svenska</a></li>
+								<li><a href="#">Русский</a></li>
+							</ul>
+						</div>
+					
+						<div class="col-md-4">
+							<ul>
+								<li><a href="#">العربية</a></li>
+								<li><a href="#">Türkçe</a></li>
+								<li><a href="#">中文</a></li>
+								<li><a href="#">日本語</a></li>
+								<li><a href="#">한국어</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<!-- CART MODAL -->
+	<div class="modal fade" id="cart" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title">Item(s) in your cart</h3>
+					<div class="subtitle">&nbsp;</div>
+				</div>
+				<div class="modal-body">
+						<ul>
+							<li>
+								<a href="single-product.html">
+									<div class="media">
+										<img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
+										<div class="media-body">
+											<h5 class="media-heading">ITEM 1 <br><span>2 X $499</span></h5>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="single-product.html">
+									<div class="media">
+										<img class="media-left media-object" src="img/home/cart-items/cart-item-01.jpg" alt="cart-Image">
+										<div class="media-body">
+											<h5 class="media-heading">ITEM 2 <br><span>2 X $89</span></h5>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="btn-group" role="group" aria-label="...">
+							<button type="button" class="btn btn-primary btn-block" onclick="location.href='checkout-step-1.html';">Checkout</button>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="assets/vendor/moment/moment.min.js"></script>
-  <script type="text/javascript" src="assets/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
-  <script type="text/javascript" src="assets/vendor/bootstrap-tour/js/bootstrap-tour.min.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
-  <script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/moment/moment.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<script type="text/javascript" src="assets/vendor/bootstrap-tour/js/bootstrap-tour.min.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
 </body>
 </html>

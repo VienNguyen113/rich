@@ -104,12 +104,16 @@ select {
 .controlCollapse {
 	cursor: pointer;
 }
+.iconRotate90:before {
+	transform: rotate(90deg);
+	display: inline-block;
+}
 .iconRotate180:before {
 	transform: rotate(180deg);
 	display: inline-block;
 }
-.iconRotate90:before {
-	transform: rotate(90deg);
+.iconRotate270:before {
+	transform: rotate(270deg);
 	display: inline-block;
 }
 
@@ -176,6 +180,47 @@ input:checked ~ .label-checkbox:after {
 	background-color: #e5e5e5;
 }
 
+/*Rating*/
+.rating { 
+  border: none;
+  float: left;
+  position: relative;
+}
+.rating.preventVote:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+.rating > label { 
+	color: #ddd; 
+	float: right; 
+	font-size: 10px !important;
+}
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #faae3e;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #faae3e;  } 
+
 /*sidebar link*/
 .sidebar-link {
 	width: 100%;
@@ -212,10 +257,6 @@ input:checked ~ .label-checkbox:after {
 }
 
 /*Menu auto*/
-/*.menu-auto ul li a.menu-sublink:hover ~ .next-menu,
-.menu-auto ul li .next-menu:hover {
-	display: block !important;
-}*/
 .menu-auto>ul>li {
 	margin-right: 15px;
 }
@@ -758,6 +799,13 @@ input:checked ~ .label-checkbox:after {
 }
 .subpage-title button.dropdown-toggle:focus {
 	color: #fff !important;
+}
+.subpage-title .back-link span {
+    line-height: 40px;
+    font-size: 24px;
+    margin: 0 5px 0 0;
+    padding: 0 5px 0 0;
+    color: #8aa4c7;
 }
 .subpage-content {
 	padding: 25px;
@@ -1422,4 +1470,148 @@ input:checked ~ .label-checkbox:after {
 	position: relative;
 	top: 2px;
 	min-width: initial;
+}
+
+/*invitation quote*/
+.invitation-quote-container {
+
+}
+.quote-gallery {
+	position: relative;
+	height: 300px;
+}
+.quote-gallery .quote-data {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	padding: 5px;
+	text-align: right;
+}
+.quote-gallery .quote-data h4 {
+	margin: 0 0 8px 0;
+	color: #5f73a1;
+	text-transform: initial;
+}
+.quote-gallery .quote-data p {
+	margin: 0;
+	color: #8d9cc0;
+	font-size: 14px;
+}
+.quote-gallery img {
+	width: 100%;
+}
+.quote-gallery .quote-img {
+	width: 14%;
+	padding: 0 15px;
+	float: left;
+	position: absolute;
+	bottom: 0;
+}
+.quote-gallery .quote-img.quote-img-1 {
+	width: 32%;
+}
+.quote-gallery .quote-img.quote-img-2 {
+	width: 19%;
+	left: 32%;
+}
+.quote-gallery .quote-img.quote-img-3 {
+	width: 21%;
+	left: 51%
+}
+.quote-gallery .quote-img.quote-img-4 {
+	left: 72%
+}
+.quote-gallery .quote-img.quote-img-5 {
+	left: 86%
+}
+.quote-list {
+	margin-top: 4%;
+}
+.quote-list-header{
+	line-height: 40px;
+	border-bottom: 1px solid #7588b2;
+}
+.quote-list-header p {
+	font-size: 14px;
+	color: #7588b2;
+	line-height: 40px;
+	margin: 0;
+}
+.quote-list-header p span {
+	color: #333;
+}
+.quote-list-header select  {
+	font-size: 14px;
+	color: #7588b2;
+	border: 0;
+	height: 40px;
+	margin: 0;
+	font-weight: 600;
+}
+.quote-content .quote-row {
+	margin-top: 3%;
+}
+.quote-address span {
+	float: left;
+	font-size: 24px;
+	width: 30px;
+	color: #7588b2;
+}
+.quote-address p {
+	display: inline-block;
+	color: #7588b2;
+	float: left;
+	width: calc(100% - 30px);
+}
+.quote-address .quote-logo {
+	max-width: 150px;
+}
+.quote-company-review h4 {
+	color: #6074a2;
+	text-transform: initial;
+	margin: 5px 0;
+}
+.quote-company-review .review .score {
+	float: left;
+	color: #faae3e;
+	font-size: 12px;
+	line-height: 28px;
+}
+.quote-company-review .review p,
+.quote-company-review .review .rating {
+	float: left;
+	margin: 0;
+}
+.quote-company-review .review p {
+	line-height: 28px;
+}
+.quote-company-review .more-info {
+	color: #7588b2;
+	font-size: 12px;
+	margin: 0;
+}
+.quote-detail {
+	text-align: right;
+	padding-left: 0;
+}
+.quote-detail h1 {
+	font-weight: 600;
+	color: #6074a2;
+	margin: 5px 0 0px;
+}
+.quote-detail h1 span {
+	font-size: 18px;
+	margin-right: 10px;
+}
+.quote-detail p {
+	color: #6074a2;
+	margin: 0 0 5px;
+}
+.quote-detail button {
+	border: 0;
+	border-radius: 0;
+	text-transform: capitalize;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 40px;
 }

@@ -25,6 +25,23 @@
 	.menu-auto .menu-sublink-wrapper img {
 		margin: 0 !important;
 	}
+
+	/*invitation quote*/
+	.quote-gallery {
+	    height: auto;
+	}
+	.quote-gallery .quote-img {
+		width: 100% !important;
+		position: static;
+	}
+	.quote-gallery .quote-data {
+		position: static;
+	}
+	/*quote*/
+	.quote-detail {
+		padding-left: 15px;
+		text-align: left;
+	}
 }
 
 @media screen and (max-width: 480px) {

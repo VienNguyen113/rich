@@ -852,6 +852,22 @@ input:checked ~ .label-checkbox:after {
 	width: 100%;
 	height: 100%;
 }
+.manually-modal .area-avatar .wrap-avatar .update-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	color: #fff;
+    background: rgba(0, 0, 0, .6);
+    padding: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity .13s ease-out;
+}
+.manually-modal .area-avatar .wrap-avatar:hover .update-caption {
+	opacity: 1;
+}
 .manually-modal .area-avatar .number {
 	font-size: 32px;
 	color: #c8d5e6;
@@ -887,6 +903,21 @@ input:checked ~ .label-checkbox:after {
 .manually-modal .form-group label {
 	margin: 0;
 	line-height: 34px;
+}
+.manually-modal .form-group .form-dynamic {
+	max-height: 80px;
+	overflow-y: auto;
+}
+.manually-modal .form-dynamic .form-dynamic-row {
+	padding: 0 !important;
+}
+.manually-modal .form-dynamic .form-dynamic-row select {
+	width: 100px;
+	float: left;
+}
+.manually-modal .form-dynamic .form-dynamic-row input {
+	width: calc(100% - 200px);
+	float: left;
 }
 
 
@@ -1034,7 +1065,7 @@ input:checked ~ .label-checkbox:after {
 	max-height: 250px;
 	overflow-y: auto;
 	position: absolute;
-	z-index: 9999;
+	z-index: 999;
 	background: #fff;
 }
 .list-people-search .l-auto-complete li {
@@ -1148,17 +1179,44 @@ input:checked ~ .label-checkbox:after {
 .list-peoples ul li>div.l-guests {
 	width: 210px;
 }
-.list-peoples ul li>div.l-events {
+.list-peoples .guestRow .guest-name {
+	width: 247px;
+}
+.list-peoples ul li>div.l-events,
+.list-peoples .guestRow .guest-event {
 	width: 20%;
 }
-.list-peoples ul li>div.l-circles {
+.list-peoples ul li>div.l-circles,
+.list-peoples .guestRow .guest-place-with {
 	width: 18%;
 }
-.list-peoples ul li>div.l-invitation {
+.list-peoples ul li>div.l-invitation,
+.list-peoples .guestRow .guest-invitation {
 	width: calc(62% - 370px);
 }
-.list-peoples ul li>div:last-child {
+.list-peoples ul li>div.l-action {
 	margin-right: 0;
+}
+.list-peoples .guestRow {
+	margin-bottom: 10px;
+}
+.list-peoples .information-invitee {
+	margin-right: 0;
+	width: 100%;
+}
+.list-peoples .guestRow .guest-name {
+	padding-left: 98px;
+}
+.list-peoples .guestRow .guest-name p {
+	color: #006cd8;
+}
+.list-peoples .guestRow>div {
+	float: left;
+	margin-right: 15px;
+}
+.list-peoples .guestRow p {
+	margin: 0;
+	font-size: 14px;
 }
 .list-peoples ul li input,
 .list-peoples ul li select {
@@ -1205,6 +1263,7 @@ input:checked ~ .label-checkbox:after {
 	right: -3px;
 	top: -3px;
 	padding: 5px 12px !important;
+	cursor: pointer;
 }
 .list-peoples li.list-people-body p {
 	font-size: 14px;
@@ -1244,10 +1303,10 @@ input:checked ~ .label-checkbox:after {
 	padding: 0 10px;
 	background-color: #fff;
 	color: #455964;
-	width: 120px;
+	min-width: 120px;
 	text-transform: capitalize;
 	text-align: left;
-	margin: 5px 10px 5px 0;
+	margin: 3px 10px 3px 0;
 }
 .list-people-choose button p {
 	margin: 0;
@@ -1276,13 +1335,18 @@ input:checked ~ .label-checkbox:after {
 }
 .list-people-choose .search-box input {
 	border: 0px solid #8aa4c7;
-	margin: 0;
-	height: 32px;
-	line-height: 32px;
+	height: 34px;
+	line-height: 34px;
+	margin: 3px 0;
 }
 .list-people-choose .search-box span.ws-ws_search {
 	font-size: 16px;
 	color: #8aa4c7;
+	float: left;
+	width: 28px;
+	position: relative;
+	top: 10px;
+
 }
 .list-people-choose .btn-group .dropdown-toggle {
 	border: 1px solid rgb(200, 213, 230) !important;
@@ -1357,4 +1421,5 @@ input:checked ~ .label-checkbox:after {
 	color: #8aa4c7;
 	position: relative;
 	top: 2px;
+	min-width: initial;
 }

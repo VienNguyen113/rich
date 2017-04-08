@@ -92,6 +92,9 @@ select {
 	border-radius: 30px;
 }
 
+.btnWidthAuto {
+	width: auto !important;
+}
 .borderLightBlue {
 	box-shadow: inset 0px 0px 0px 1px #cad7e6;
 }
@@ -1614,4 +1617,128 @@ input:checked ~ .label-checkbox:after {
 	height: 34px;
 	line-height: 34px;
 	padding: 0 40px;
+}
+
+/*invitation card*/
+.invitation-card-tab .nav {
+	margin-bottom: 15px;
+	border-bottom: 2px solid #ebeff3;
+}
+.invitation-card-tab .nav li a {
+	border: 0;
+	font-size: 18px;
+	color: #48587b;
+	border-bottom: 2px solid #ebeff3;
+	margin-bottom: -1px;
+}
+.invitation-card-tab .nav li a:hover, 
+.invitation-card-tab .nav li.active a {
+	border: 0;
+	color: #222;
+	border-bottom: 2px solid #222222;
+	background: transparent;
+}
+.invitation-card-tab .carousel {
+	padding: 0;
+	height: 320px;
+	overflow: hidden;
+}
+.invitation-card-tab .carousel .carousel-inner img {
+	width: 100%;
+}
+.invitation-card-tab .carousel .carousel-control span {
+	font-size: 36px;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: calc(50% - 18px);
+	left: 5px;
+}
+.invitation-card-tab .carousel .carousel-control.right span {
+	left: auto;
+	right: 5px;
+}
+.invitation-card-tab .carousel-indicators li {
+	background: rgba(255, 255, 255, 0.7);
+	border: 0;
+}
+.invitation-card-tab .carousel-indicators .active {
+	width: 10px;
+	height: 10px;
+	margin: 1px;
+	background: rgba(255, 255, 255, 1);
+}
+.invitation-card-tab .paper-info {
+	border: 1px solid #cad8e5;
+	border-left: 0;
+	padding: 0;
+	height: 320px;
+	position: relative;
+}
+.invitation-card-tab .paper-info .paper-info-head {
+	padding: 18px 80px 18px 18px;
+	position: relative;
+	border-bottom: 1px solid #cad8e5;
+}
+.invitation-card-tab .paper-info .paper-info-head h4 {
+	font-size: 18px;
+}
+.invitation-card-tab .paper-info .paper-info-head h4,
+.invitation-card-tab .paper-info .paper-info-head p {
+	margin: 0;
+	color: #7386b2;
+	text-transform: initial;
+}
+.paper-info-head .price {
+    position: absolute;
+    width: 80px;
+    right: 0;
+    top: 0;
+    padding: 18px 18px 18px 0;
+    text-align: right;
+}
+.paper-info-head .price h5 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+.invitation-card-tab .paper-info .paper-info-head .price p {
+    color: #333;
+}
+.paper-info-body {
+	padding: 25px 18px;
+}
+.paper-info-body p span {
+	color: #7386b2;
+	width: 80px;
+	display: inline-block;
+}
+.paper-info-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.paper-info-footer button {
+	width: 50%;
+	float: left;
+	background: transparent;
+	color: #314e94;
+	border: 1px solid #7386b2;
+	line-height: 48px;
+	text-transform: initial;
+	border-radius: 0;
+	padding: 0;
+	margin-bottom: -1px;
+	border-left: 0;
+}
+.paper-info-footer button.bgBlue {
+	background: #7588b2;
+	color: #fff;
+	border: 1px solid #7588b2;
+}
+.invitation-card-tab .show-template {
+	text-align: center;
+	margin: 4% 0;
+}
+.invitation-card-tab .show-template a {
+	border-bottom: 1px solid #337ab7;
 }

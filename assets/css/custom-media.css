@@ -42,6 +42,21 @@
 		padding-left: 15px;
 		text-align: left;
 	}
+	/*invitation card*/
+	.invitation-card-tab .paper-info {
+	    border: 1px solid #cad8e5;
+	}
+	.paper-info-footer button {
+        border: 1px solid #cad8e5;
+        border-left: 0;
+	}
+	.invitation-card-tab .carousel,
+	.invitation-card-tab .paper-info {
+		height: auto;
+	}
+	.paper-info-footer {
+		position: initial;
+	}
 }
 
 @media screen and (max-width: 480px) {

@@ -12,7 +12,12 @@ $(document).ready(function() {
 
 	//Dropdown Menu
 	$('.btn-dropdown-menu-selected').on('click', function (event) {
-		$(this).parent().toggleClass("open");
+		var checkOpen = $(this).parent().hasClass("open");
+		// close all dropdown
+		var dropdowns = $('.group-dropdown-menu-selected');
+		dropdowns.removeClass('open');
+		// toogle dropdown selected
+		if (!checkOpen) $(this).parent().addClass('open');
 	});
 	$('body').on('click', function (e) {
 	    if (!$('btn-dropdown-menu-selected').is(e.target) 
@@ -78,3 +83,4 @@ function fixedTableHeader(elem) {
 function unFixedTableHeader(elem) {
 	elem.removeClass('control-panel-fixed');
 }
+

@@ -42,6 +42,11 @@ $(document).ready(function() {
 	//Slect number of guest in Manuallu modal
 	$('#selectNbGuest').on("change", function (event) {
 		$(".form-dynamic").empty();
+		if (event.target.value == 0) {
+			$(this).parent().addClass('alone');
+		} else 
+			$(this).parent().removeClass('alone');
+
 		for (var i = 0; i < event.target.value; i++) {
 			var newRow = `
 				<div class="form-dynamic-row clearfix">

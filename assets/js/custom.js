@@ -65,6 +65,11 @@ $(document).ready(function() {
 			$(".form-dynamic").append(newRow);
 		}
 	})
+
+	//Toggle arrow Sort
+	$('.btnSort').on('click', function() {
+		$(this).find('span').toggleClass('iconRotate180');
+	})
 })
 
 $(window).scroll(function () {

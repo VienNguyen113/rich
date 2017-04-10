@@ -25,7 +25,7 @@ input, select {
 	margin-bottom: 6px;
 	padding: 0 17px 0 10px;
 }
-select, .btnSort {
+select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background: url(../img/icons/dropdown.png) no-repeat transparent calc(100% - 3px) center/12px;
@@ -97,6 +97,26 @@ select, .btnSort {
 }
 .borderLightBlue {
 	box-shadow: inset 0px 0px 0px 1px #cad7e6;
+}
+.btnSort {
+	border: 0;
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 0;
+	padding-right: 25px;
+	background-size: 16px;
+	background-color: transparent;
+	line-height: 34px;
+	position: relative;
+}
+.btnSort span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 25px;
+	font-weight: 600;
+	line-height: 34px;
 }
 .pullRight {
 	float: right;
@@ -1237,7 +1257,7 @@ input:checked ~ .label-checkbox:after {
 	right: 0;
 	bottom: 0;
 }
-.list-peoples ul li.list-people-header button.btnSort {
+/*.list-peoples ul li.list-people-header button.btnSort {
 	border: 0;
 	font-size: 14px;
 	font-weight: 600;
@@ -1246,7 +1266,7 @@ input:checked ~ .label-checkbox:after {
 	background-size: 16px;
 	background-color: transparent;
 	line-height: 34px;
-}
+}*/
 .list-peoples ul li.list-people-header p {
 	color: #7f7f7f;
 	font-size: 14px;

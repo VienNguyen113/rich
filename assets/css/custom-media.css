@@ -5,6 +5,17 @@
 }
 
 @media screen and (max-width: 767px) {
+	.formInline .form-group {
+		margin-bottom: 10px;
+	}
+	.process-bar .process {
+		width: 84px;
+	}
+	.process-bar .process p {
+	    margin: 25px 0 0 -31px;
+	    width: 84px;
+	}
+
 	.menu-auto .next-menu .ws-ws_caret-up {
 		display: none;
 	}
@@ -56,6 +67,14 @@
 	}
 	.paper-info-footer {
 		position: initial;
+	}
+
+	/*quotation page*/
+	.quotation-container .divider-vertical{
+		display: none;
+	}
+	.quotation-preview .btnPreview {
+		margin: 15px 0 0 15px;
 	}
 }
 

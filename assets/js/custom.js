@@ -70,6 +70,18 @@ $(document).ready(function() {
 	$('.btnSort').on('click', function() {
 		$(this).find('span').toggleClass('iconRotate180');
 	})
+
+	//increase and decrease form type number
+	$('.btnPlus').on('click', function(e) {
+		e.preventDefault();
+		var range = 1;
+		$(this).parent().find('input')[0].value = parseInt($(this).parent().find('input')[0].value) + range;
+	})
+	$('.btnMinus').on('click', function(e) {
+		e.preventDefault();
+		var range = 1;
+		$(this).parent().find('input')[0].value = parseInt($(this).parent().find('input')[0].value) - range;
+	})
 })
 
 $(window).scroll(function () {

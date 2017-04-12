@@ -53,6 +53,18 @@ select {
 .marginTop10 {
 	margin-top: 10px;
 }
+.div-empty {
+    width: 100%;
+    height: 2em;
+    display: inline-block;
+}
+.medium-title {
+	margin: 0 0 20px;
+	font-size: 20px;
+	line-height: 36px;
+	border-bottom: 1px solid #cad8e5;
+	text-transform: initial;
+}
 
 /*text*/
 .textSuccess {
@@ -131,6 +143,15 @@ select {
 .btnWidthAuto {
 	width: auto !important;
 }
+.btnNoneStyle {
+	background: transparent;
+	border: 0;
+}
+.btnSmall {
+	height: 36px;
+	line-height: 36px;
+	padding: 0;
+}
 .btnSort {
 	border: 0;
 	font-size: 14px;
@@ -174,6 +195,17 @@ select {
 input.custom-checkbox {
 	display: none;
 }
+.form-custom-checkbox input.custom-checkbox ~ p {
+	display: inline-block;
+	margin: 0;
+	float: right;
+	line-height: 22px;
+	font-size: 14px;
+}
+.form-custom-checkbox .label-checkbox {
+	float: right;
+	margin-right: 7px;
+}
 .label-checkbox {
 	border: 2px solid #c8d5e6;
 	height: 22px;
@@ -198,6 +230,23 @@ input:checked ~ .label-checkbox {
 }
 input:checked ~ .label-checkbox:after {
 	display: block;
+}
+
+/*Input Shape*/
+.form-custom-checkbox-shape {
+	margin: 0 3px !important;
+	text-align: center;
+	cursor: pointer;
+	height: 34px;
+}
+.form-custom-checkbox-shape i {
+	font-size: 24px;
+	color: #c4d1e3;
+	position: relative;
+	top: 5px;
+}
+.form-custom-checkbox-shape input:checked ~ i {
+	color: #5b80b0;
 }
 
 /*dropdown*/
@@ -306,14 +355,17 @@ input:checked ~ .label-checkbox:after {
 	position: absolute;
 	top: -8px;
 	left: 0;
-	background: #8aa4c7;
+	background: #c8d5e6;
 	border-radius: 100%;
 	text-align: center;
 }
 .process-bar .process.complete span {
 	background: #22b066;
 }
-.process-bar .process span i {
+.process-bar .process.pending span {
+	background: #8aa4c7;
+}
+.process-bar .process.pending span i {
     width: 10px;
     height: 10px;
     display: inline-block;
@@ -339,6 +391,7 @@ input:checked ~ .label-checkbox:after {
 	color: #888;
 	margin: 0;
 }
+.formInline .form-group textarea,
 .formInline .form-group input,
 .formInline .form-group select {
 	margin: 0;
@@ -347,7 +400,12 @@ input:checked ~ .label-checkbox:after {
 }
 .formInline .form-group.form-w-50 input,
 .formInline .form-group.form-w-50 select {
-	width: 50%;
+	width: 49%;
+	min-width: 130px;
+}
+.formInline .form-group.form-w-90 input,
+.formInline .form-group.form-w-90 select {
+	width: 90%;
 	min-width: 180px;
 }
 .form-group .form-type-number button {
@@ -371,6 +429,49 @@ input:checked ~ .label-checkbox:after {
 	float: left;
 	border-left: 0;
 	border-right: 0;
+}
+.form-group .form-fullname label {
+	width: 100%;
+}
+.form-group .form-fullname select {
+	width: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.form-group .form-fullname input {
+	width: calc(100% - 60px);
+	float: left;
+}
+.formInline .form-group .form-2-select select {
+	width: 150px;
+	margin-right: 10px;
+	float: left;
+}
+.formInline .form-group .form-2-select select:last-child {
+	margin-right: 0;
+}
+.formInline .form-group .form-datetime input {
+	width: 150px;
+	margin-right: 10px;
+	float: left;
+	background: url(../img/icons/calendar.png) no-repeat calc(100% - 5px) 5px;
+}
+.formInline .form-group .form-datetime select {
+	width: 120px;
+	float: left;
+}
+.formInline .form-group .form-quote button {
+	background: #8aa4c7;
+	color: #fff;
+	width: 120px;
+	margin-left: 10px;
+	float: left;
+}
+.formInline .form-group .form-quote input,
+.formInline .form-group .form-quote select,
+.formInline .form-group .form-quote textarea {
+	width: calc(100% - 130px);
+	float: left;
 }
 
 /*sidebar link*/
@@ -1953,16 +2054,146 @@ input:checked ~ .label-checkbox:after {
 .quotation-container .form-request {
 	margin-top: 15px;
 }
-.quotation-container .form-request h2 {
-	margin: 0 0 20px;
-	font-size: 22px;
-	line-height: 40px;
-	border-bottom: 1px solid #cad8e5;
-	text-transform: initial;
-}
-.quotation-preview img {
+.card-preview img {
 	width: 100%;
 }
-.quotation-preview .wrap-img {
+.card-preview .wrap-img {
 	padding: 15px;
+}
+
+/*invitation card edit page*/
+.invitation-card-edit-container {
+	position: relative;
+}
+.invitation-card-edit-container .medium-title {
+	margin-bottom: 10px;
+}
+.invitation-card-edit-container .divider-vertical{
+	left: 66.66%;
+	top: -25px;
+	height: calc(100% + 25px);
+}
+.invitation-card-edit-container .form-request {
+	margin-top: 15px;
+}
+.form-upload-wedding-logo {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.form-upload-wedding-logo .form-upload-wedding {
+	width: 140px;
+	display: inline-block;
+}
+.form-upload-wedding button.uploadWeddingLogo {
+	background: #8aa4c7;
+	color: #fff;
+	margin-top: 10px;
+	position: relative;
+}
+.form-upload-wedding button.uploadWeddingLogo input {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	margin: 0;
+	font-size: 0;
+	cursor: pointer;
+	display: block;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.form-upload-wedding .wedding-logo {
+	padding: 10px;
+	border: 1px dotted #afbad3;
+	height: 140px;
+}
+.form-upload-wedding .wedding-logo p {
+	color: #666;
+	font-size: 16px;
+	margin: 20px 0 15px;
+}
+.form-upload-wedding .wedding-logo i {
+	font-size: 46px;
+	color: #c8d5e6;
+}
+
+/*empty list container*/
+.empty-list-container .list-shapes {
+    text-align: center;
+    padding: 20px 10px;
+}
+.empty-list-container .list-shapes p {
+	font-size: 20px;
+	color: #8aa4c5;
+	margin-bottom: 20px;
+}
+.empty-list-container .list-shapes .shapes label {
+    font-size: 18px !important;
+    text-transform: initial;
+    color: #516f93;
+    display: inline-block;
+    margin: 0 8px 0 0;
+    font-weight: normal;
+    line-height: 34px;
+    position: relative;
+    top: -7px;
+}
+.empty-list-container .list-shapes .shapes button {
+    font-size: 34px;
+    color: #c4d1e3;
+    display: inline-block;
+    margin: 0 5px;
+}
+.empty-list-container .list-shapes .shapes button:hover,
+.empty-list-container .list-shapes .shapes button:focus,
+.empty-list-container .list-shapes .shapes button.active {
+	color: #8aa4c7;
+}
+.simple-slider {
+	position: relative;
+}
+.simple-slider .view {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding: 0 5px;
+}
+.simple-slider .view ul {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 10000px;
+}
+.simple-slider .view ul li {
+	float: left;
+	padding: 0 7px;
+}
+.simple-slider .view ul li a {
+    width: 100%;
+    margin-bottom: 14px;
+    display: block;
+}
+.simple-slider .view ul li a img {
+	width: 100%;
+}
+.simple-slider button.control {
+	background: #b9cade;
+	width: 30px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	position: absolute;
+	top: calc(50% - 20px);
+	left: -20px;
+}
+.simple-slider button.control.control-right {
+	left: auto;
+	right: -20px;
+}
+.simple-slider button.control span {
+	font-size: 24px;
+	color: #fff;
+	position: relative;
+	top: 4px;
 }

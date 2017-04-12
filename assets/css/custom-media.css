@@ -16,6 +16,18 @@
 	    width: 84px;
 	}
 
+	.formInline .text-right {
+		text-align: left;
+	}
+	.formInline .form-group .form-datetime input,
+	.formInline .form-group .form-2-col select,
+	.formInline .form-group .form-2-select select {
+		margin-bottom: 5px;
+	}
+	.formInline br {
+		display: none;
+	}
+
 	.menu-auto .next-menu .ws-ws_caret-up {
 		display: none;
 	}
@@ -73,12 +85,28 @@
 	.quotation-container .divider-vertical{
 		display: none;
 	}
-	.quotation-preview .btnPreview {
+	.card-preview .btnPreview {
 		margin: 15px 0 0 15px;
+	}
+
+	/*invitation card edit*/
+	.invitation-card-edit-container .divider-vertical{
+		display: none;
 	}
 }
 
 @media screen and (max-width: 480px) {
+	/*common*/
+	.formInline .form-group .form-quote input, 
+	.formInline .form-group .form-quote select, 
+	.formInline .form-group .form-quote textarea {
+		width: 100%;
+	}
+	.formInline .form-group .form-quote button {
+		margin: 10px 0 0 0;
+	}
+
+
 	.manually-modal .modal-content {
 		padding: 0;
 	}
@@ -101,4 +129,5 @@
 	.invite-facebook-modal .modal-body .list-friends>div {
 		width: 100%;
 	}
+
 }

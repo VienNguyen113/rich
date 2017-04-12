@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Request Quotation</title>
+	<title>Invitation Card Edit</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-icomoon.css">
@@ -201,23 +201,23 @@
 						<div class="subpage-content-container">
 							<div class="subpage-title clearfix">
 								<a href="#" class="back-link"><span class="ws-ws_arrow-up iconRotate270"></span></a>
-								<h2>Wedding Invitation Card #3 - Quotation</h2>
+								<h2>Wedding Invitation Card #3 - Wording</h2>
 							</div>
 
 							<div class="subpage-content">
-								<div class="quotation-container clearfix">
-									<div class="col-sm-8 quotation-form">
+								<div class="invitation-card-edit-container clearfix">
+									<div class="col-sm-8 invitation-card-edit-form">
 										<div class="processing">
 											<div class="process-bar clearfix">
 												<div class="process process-start complete">
 													<span><i class="ws-ws_check"></i></span>
 													<p class="status">Design</p>
 												</div>
-												<div class="process process-middle complete">
-													<span><i class="ws-ws_check"></i></span>
+												<div class="process process-middle pending">
+													<span><i></i></span>
 													<p class="status">Wording</p>
 												</div>
-												<div class="process process-end pending">
+												<div class="process process-end">
 													<span><i></i></span>
 													<p class="status">Quotation</p>
 												</div>
@@ -225,11 +225,169 @@
 										</div>
 
 										<div class="form-request">
-											<h2 class="medium-title">Request Quotation</h2>
 											<form action="" class="formInline">
+												<h2 class="medium-title">Front Page</h2>
+												<div class="form-upload-wedding-logo text-center">
+													<div class="form-upload-wedding">
+														<div class="wedding-logo">
+															<p>Wedding Logo</p>
+															<i class="ws-ws_picture"></i>
+														</div>
+														<button class="btn btnNormal btnSmall uploadWeddingLogo">
+															Upload
+															<input type="file">
+														</button>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<div class="col-sm-2 text-right">
+														<label for="">Quote: </label>
+													</div>
+													<div class="col-sm-10 form-quote">
+														<textarea name="" id="" rows="3" placeholder="Quote text here"></textarea>
+														<button class="btn btnNormal btnSmall">Insert quote</button>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<div class="col-sm-2 text-right">
+														<label for="">Shape: </label>
+													</div>
+													<div class="col-sm-10 form-shape">
+														<label for="shapeHeart" class="form-custom-checkbox form-custom-checkbox-shape clearfix">
+															<input type="radio" name="shape" checked="checked" class="custom-checkbox" id="shapeHeart">
+															<i class="ws-ws_heart"></i>
+														</label>
+														<label for="shapeCircle" class="form-custom-checkbox form-custom-checkbox-shape clearfix">
+															<input type="radio" name="shape" class="custom-checkbox" id="shapeCircle">
+															<i class="ws-ws_cirlce"></i>
+														</label>
+														<label for="shapeColor" class="form-custom-checkbox form-custom-checkbox-shape clearfix">
+															<input type="radio" name="shape" class="custom-checkbox" id="shapeColor">
+															<i class="ws-ws_color"></i>
+														</label>
+													</div>
+												</div>
+
+
+												<h2 class="medium-title">Core Page</h2>
+												<div class="form-group clearfix">
+													<div class="col-sm-6 form-fullname">
+														<label for="">Party 1 Family: </label>
+														<select name="" id="">
+															<option value="">Mr.</option>
+															<option value="">Ms.</option>
+														</select>
+														<input type="text" placeholder="Full Name">
+													</div>
+													<div class="col-sm-6 form-fullname">
+														<label for="">Party 2 Family: </label>
+														<select name="" id="">
+															<option value="">Mr.</option>
+															<option value="">Ms.</option>
+														</select>
+														<input type="text" placeholder="Full Name">
+													</div>
+												</div>
+												<br>
+												<div class="form-group clearfix">
+													<div class="col-sm-2 text-right">
+														<label for="">Invitation: </label>
+													</div>
+													<div class="col-sm-10 form-2-select">
+														<select name="" id="">
+															<option value="">Would love to</option>
+															<option value="">Optional</option>
+														</select>
+														<select name="" id="">
+															<option value="">have you</option>
+															<option value="">Optional</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<div class="col-sm-2">
+													</div>
+													<div class="col-sm-10 form-2-select">
+														<select name="" id="">
+															<option value="">at their Daughter & Son</option>
+															<option value="">Optional</option>
+														</select>
+														<select name="" id="">
+															<option value="">wedding</option>
+															<option value="">Optional</option>
+														</select>
+													</div>
+												</div>
+												<br>
+												<div class="form-group clearfix">
+													<div class="col-sm-6 form-fullname">
+														<label for="">Party 1: </label>
+														<select name="" id="">
+															<option value="">Mr.</option>
+															<option value="">Ms.</option>
+														</select>
+														<input type="text" placeholder="Full Name">
+													</div>
+													<div class="col-sm-6 form-fullname">
+														<label for="">Party 2: </label>
+														<select name="" id="">
+															<option value="">Mr.</option>
+															<option value="">Ms.</option>
+														</select>
+														<input type="text" placeholder="Full Name">
+													</div>
+												</div>
+												<br>
+												<br>
+												<div class="form-group form-w-90 clearfix">
+													<div class="col-sm-3 text-right">
+														<label for="">Place: </label>
+													</div>
+													<div class="col-sm-9">
+														<input type="text">
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<div class="col-sm-3 text-right">
+														<label for="">Date & Time: </label>
+													</div>
+													<div class="col-sm-9 form-datetime">
+														<input type="text" class="datetime">
+														<select name="" id="">
+															<option value="">2:00 PM</option>
+															<option value="">3:00 PM</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group form-w-90 clearfix">
+													<div class="col-sm-3 text-right">
+														<label for="">Additional line: </label>
+													</div>
+													<div class="col-sm-9">
+														<input type="text">
+													</div>
+												</div>
+
+
+												<h2 class="medium-title">RSVP</h2>
+												<div class="form-group clearfix">
+													<label for="detachedPaperCard1" class="form-custom-checkbox clearfix">
+														<input type="checkbox" class="custom-checkbox" id="detachedPaperCard1">
+														<p>Detached paper card</p>
+														<span class="label-checkbox"></span>
+													</label>
+												</div>
 												<div class="form-group clearfix">
 													<div class="col-sm-3">
-														<label for="">Full name: </label>
+														<label for="">Unswer till: </label>
+													</div>
+													<div class="col-sm-9" class="form-datetime">
+														<input type="text" class="datetime">
+													</div>
+												</div>
+												<div class="form-group clearfix">
+													<div class="col-sm-3">
+														<label for="">1 Phone #: </label>
 													</div>
 													<div class="col-sm-9">
 														<input type="text">
@@ -237,46 +395,70 @@
 												</div>
 												<div class="form-group clearfix">
 													<div class="col-sm-3">
-														<label for="">Contact info: </label>
+														<label for="">2 Phone #: </label>
 													</div>
 													<div class="col-sm-9">
 														<input type="text">
+													</div>
+												</div>
+
+												<h2 class="medium-title">Registry</h2>
+												<div class="form-group clearfix">
+													<label for="detachedPaperCard2" class="form-custom-checkbox clearfix">
+														<input type="checkbox" class="custom-checkbox" id="detachedPaperCard2">
+														<p>Detached paper card</p>
+														<span class="label-checkbox"></span>
+													</label>
+												</div>
+												<div class="form-group clearfix">
+													<div class="col-sm-3">
+														<label for="">Registry text: </label>
+													</div>
+													<div class="col-sm-9">
+														<textarea name="" id="" rows="4"></textarea>
 													</div>
 												</div>
 												<div class="form-group form-w-50 clearfix">
 													<div class="col-sm-3">
-														<label for="">Delivery Due: </label>
+														<label for="">Provider #1: </label>
 													</div>
 													<div class="col-sm-9">
 														<select name="" id="">
-															<option value="">12.08.2017</option>
+															<option value="">Provider 1</option>
 															<option value="">Optional</option>
 														</select>
 													</div>
 												</div>
-												<div class="form-group clearfix">
+												<div class="form-group form-w-50 clearfix">
 													<div class="col-sm-3">
-														<label for="">Quantity: </label>
-													</div>
-													<div class="col-sm-9 form-type-number clearfix">
-														<button class="btnMinus"><span class="ws-ws_minus"></span></button>
-														<input type="text" value="400">
-														<button class="btnPlus"><span class="ws-ws_plus"></span></button>
-													</div>
-												</div>
-												<div class="form-group clearfix">
-													<div class="col-sm-3">
-														<label for="">Partner courier: </label>
+														<label for="">Provider #2: </label>
 													</div>
 													<div class="col-sm-9">
 														<select name="" id="">
-															<option value="">UPS</option>
+															<option value="">Provider 1</option>
 															<option value="">Optional</option>
 														</select>
 													</div>
+												</div>
+												<div class="form-group form-w-50 clearfix">
+													<div class="col-sm-3">
+														<label for="">Provider #3: </label>
+													</div>
+													<div class="col-sm-9 form-2-col">
+														<select name="" id="">
+															<option value="">Provider 1</option>
+															<option value="">Optional</option>
+														</select>
+														<input type="text" placeholder="Some another provider">
+													</div>
+												</div>
+
+												<h2 class="medium-title">Web Site</h2>
+												<div class="form-group col-sm-12">
+													<a href="#" class="website">www.party1&party2.lb.wedding.com</a>
 												</div>
 												<div class="form-group marginTop10 clearfix col-sm-12">
-													<button class="btn btnNormal bgBlue">Request Quotation</button>
+													<button class="btn btnNormal bgBlue">Go Quotation step</button>
 												</div>
 											</form>
 										</div>
@@ -289,8 +471,16 @@
 										<div class="col-sm-12 wrap-img">
 											<img src="assets/img/invitations/quotation1.png" alt="">
 										</div>
+										<div class="div-empty"></div>
 										<div class="col-sm-12 wrap-img">
 											<img src="assets/img/invitations/quotation2.png" alt="">
+										</div>
+										<div class="div-empty"></div>
+										<div class="col-sm-12 wrap-img">
+											<img src="assets/img/invitations/invitation-card-1.png" alt="">
+										</div>
+										<div class="col-sm-12 wrap-img">
+											<img src="assets/img/invitations/invitation-card-1.png" alt="">
 										</div>
 									</div>
 									<div class="divider-vertical"></div>

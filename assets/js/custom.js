@@ -1,4 +1,11 @@
 $(document).ready(function() {
+	/*
+	|--------------------------------------------------
+	| Common variable
+	|--------------------------------------------------
+	*/
+	w = $( window ).width();
+
 	//Control arrow of Collapse
 	$('.controlCollapse').on('click', function(e) {
 		if ($(this).hasClass('iconArrowRight')) {
@@ -12,25 +19,24 @@ $(document).ready(function() {
 
 	//Dropdown Menu
 	$('.btn-dropdown-menu-selected').on('click', function (event) {
-		var checkOpen = $(this).parent().hasClass("open");
+		checkOpen = $(this).parent().hasClass("open");
 		// close all dropdown
-		var dropdowns = $('.group-dropdown-menu-selected');
+		dropdowns = $('.group-dropdown-menu-selected');
 		dropdowns.removeClass('open');
 		// toogle dropdown selected
 		if (!checkOpen) $(this).parent().addClass('open');
 	});
 	$('body').on('click', function (e) {
-	    if (!$('btn-dropdown-menu-selected').is(e.target) 
-	        && $('btn-dropdown-menu-selected').has(e.target).length == 0 
-	        && $('.group-dropdown-menu-selected').has(e.target).length == 0
-	    ) {
-	        $('.group-dropdown-menu-selected').removeClass('open');
-	    }
+		if (!$('btn-dropdown-menu-selected').is(e.target) 
+			&& $('btn-dropdown-menu-selected').has(e.target).length == 0 
+			&& $('.group-dropdown-menu-selected').has(e.target).length == 0
+		) {
+			$('.group-dropdown-menu-selected').removeClass('open');
+		}
 	});
 
 	//Top Menu Auto show
 	$('.menu-sublink-wrapper').on('mouseover', function (event) {
-		var w = $(window).width();
 		if (w >= 768) 
 			$(this).addClass("active");
 	});
@@ -48,7 +54,7 @@ $(document).ready(function() {
 			$(this).parent().removeClass('alone');
 
 		for (var i = 0; i < event.target.value; i++) {
-			var newRow = `
+			newRow = `
 				<div class="form-dynamic-row clearfix">
 					<select name="guest-relation-${i}" id="">
 						<option value="">Relation</option>
@@ -74,14 +80,35 @@ $(document).ready(function() {
 	//increase and decrease form type number
 	$('.btnPlus').on('click', function(e) {
 		e.preventDefault();
-		var range = 1;
+		range = 1;
 		$(this).parent().find('input')[0].value = parseInt($(this).parent().find('input')[0].value) + range;
 	})
 	$('.btnMinus').on('click', function(e) {
 		e.preventDefault();
-		var range = 1;
+		range = 1;
 		$(this).parent().find('input')[0].value = parseInt($(this).parent().find('input')[0].value) - range;
 	})
+
+	/*
+	|--------------------------------------------------
+	| Simple Slider
+	|--------------------------------------------------
+	*/
+	setWidthOfEachSlider(setColumnOfSlider(w));
+
+	$('.simple-slider button.control-right').on('click', function(e) {
+		e.preventDefault();
+		if (!$(this).hasClass('disabled')) {
+			simpleSlideMoveLeft(setColumnOfSlider(w));
+		};
+	})
+	$('.simple-slider button.control-left').on('click', function(e) {
+		e.preventDefault();
+		if (!$(this).hasClass('disabled')) {
+			simpleSlideMoveRight(setColumnOfSlider(w));
+		};
+	})
+
 })
 
 $(window).scroll(function () {
@@ -98,11 +125,78 @@ $(window).scroll(function () {
 	}
 })
 
-// for Budget page
+$(window).resize(function () {
+	/*
+	|--------------------------------------------------
+	| Common variable
+	|--------------------------------------------------
+	*/
+	w = $( window ).width();
+	
+	setWidthOfEachSlider(setColumnOfSlider(w));
+})
+
+/*
+|--------------------------------------------------
+| Budget page
+|--------------------------------------------------
+*/
 function fixedTableHeader(elem) {
 	elem.addClass('control-panel-fixed');
 }
 function unFixedTableHeader(elem) {
 	elem.removeClass('control-panel-fixed');
+}
+
+
+/*
+|--------------------------------------------------
+| Function Simple Slider
+|--------------------------------------------------
+*/
+setColumnOfSlider = function (windowWidth) {
+	if (windowWidth>=768) {
+		return 3;
+	} else if (windowWidth>=480) {
+		return 2;
+	} else{
+		return 1;
+	}
+}
+setWidthOfEachSlider = function (column = 3) {
+	containerWidth = $('.simple-slider .view').width();
+	$('.simple-slider .view ul li').css('width', containerWidth/column);
+}
+simpleSlideMoveLeft = function (column = 3) {
+	$('.simple-slider button.control').addClass('disabled');
+	container = $('.simple-slider ul');
+	slider = $('.simple-slider ul li:first-child');
+
+	slider.clone().appendTo(container);
+
+	container.animate({
+		left: - slider.outerWidth(),
+		},500, function() {
+			slider.remove();
+			container.css('left', '0');
+			$('.simple-slider button.control').removeClass('disabled');
+		}
+	);
+}
+simpleSlideMoveRight = function (column = 3) {
+	$('.simple-slider button.control').addClass('disabled');
+	container = $('.simple-slider ul');
+	slider = $('.simple-slider ul li:last-child');
+
+	slider.clone().prependTo(container);
+	container.css('left', - slider.outerWidth());
+
+	container.animate({
+		left: 0,
+		},500, function() {
+			slider.remove();
+			$('.simple-slider button.control').removeClass('disabled');
+		}
+	);
 }
 

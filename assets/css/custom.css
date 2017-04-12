@@ -44,10 +44,13 @@ select {
 	cursor: pointer;
 }
 .divider-vertical {
-	position: absolute;
-	top: 0;
 	height: 100%;
 	width: 1px;
+	background: #cad8e5;
+}
+.divider-horizontal {
+	width: 100%;
+	height: 1px;
 	background: #cad8e5;
 }
 .marginTop10 {
@@ -101,6 +104,18 @@ select {
 }
 .iconDelete {
 	background: url(../img/icons/delete.png) no-repeat transparent 4px center/20px;
+}
+.iconAnnouncement {
+	background: url(../img/icons/announcement.png) no-repeat transparent center center/100% 100%;
+}
+.iconC6 {
+	background: url(../img/icons/c6.png) no-repeat transparent center center/100% 100%;
+}
+.iconCottonPearl {
+	background: url(../img/icons/cotton-pearl.png) no-repeat transparent center center/100% 100%;
+}
+.iconHotStamping {
+	background: url(../img/icons/hot-stamping.png) no-repeat transparent center center/100% 100%;
 }
 .iconRotate90:before {
 	transform: rotate(90deg);
@@ -472,6 +487,92 @@ input:checked ~ .label-checkbox:after {
 .formInline .form-group .form-quote textarea {
 	width: calc(100% - 130px);
 	float: left;
+}
+
+/*form special*/
+.select-with-icon {
+	margin-bottom: 10px;
+}
+.select-with-icon i {
+    font-size: 25px;
+    float: left;
+    width: 30px;
+    text-align: center;
+    color: #8aa4c7;
+    position: relative;
+    top: 5px;
+}
+.select-with-icon select {
+	border: 0;
+	float: left;
+	width: calc(100% - 60px);
+	color: #465879;
+	background: transparent;
+	margin: 0;
+}
+.select-with-icon span {
+	font-size: 18px;
+    float: left;
+    width: 30px;
+    text-align: center;
+    color: #7588b3;
+    position: relative;
+    top: 7px;
+    font-weight: 600;
+}
+
+.form-group-with-icon {
+	margin-bottom: 10px;
+	border: 1px solid #cad8e5;
+	height: 70px;
+}
+.form-group-with-icon .icon {
+	width: 68px;
+	height: 68px;
+	float: left;
+	border-right: 1px solid #cad8e5;
+}
+.form-group-with-icon .form-select {
+    width: calc(100% - 68px);
+    padding: 10px 30px 10px 10px;
+    position: relative;
+    float: left;
+}
+.form-group-with-icon .form-select h5 {
+    color: #465879;
+    font-size: 15px;
+    text-transform: initial;
+    margin: 5px 0 0;
+    font-weight: 400;
+}
+.form-group-with-icon .form-select select {
+    border: 0;
+    color: #b9c0cd;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+}
+.form-group-with-icon .form-select i {
+    font-size: 18px;
+    float: left;
+    width: 30px;
+    text-align: center;
+    color: #7588b3;
+    position: absolute;
+    top: 24px;
+    font-weight: 600;
+    right: 0;
+}
+
+.form-group-color {
+	margin-bottom: 10px;
+}
+.form-group-color .input-color {
+	height: 34px;
+	width: 100%;
 }
 
 /*sidebar link*/
@@ -2047,6 +2148,8 @@ input:checked ~ .label-checkbox:after {
 	position: relative;
 }
 .quotation-container .divider-vertical{
+	position: absolute;
+	top: 0;
 	left: 66.66%;
 	top: -25px;
 	height: calc(100% + 25px);
@@ -2069,6 +2172,8 @@ input:checked ~ .label-checkbox:after {
 	margin-bottom: 10px;
 }
 .invitation-card-edit-container .divider-vertical{
+	position: absolute;
+	top: 0;
 	left: 66.66%;
 	top: -25px;
 	height: calc(100% + 25px);
@@ -2196,4 +2301,67 @@ input:checked ~ .label-checkbox:after {
 	color: #fff;
 	position: relative;
 	top: 4px;
+}
+
+/*invitation envelope detail*/
+.invitation-envelope-detail-container {
+	position: relative;
+}
+.invitation-envelope-detail  {
+	text-align: center;
+}
+.invitation-envelope-detail-container .divider-vertical{
+	position: absolute;
+	left: 66.66%;
+	top: -25px;
+	height: calc(100% + 25px);
+}
+.invitation-envelope-detail-container .divider-vertical.divider-vertical-right{
+	left: 100%;
+	top: -25px;
+	height: calc(100% + 25px);
+}
+.invitation-envelope-detail-form .wrap-img {
+	text-align: center;
+}
+.invitation-envelope-detail-form .wrap-img img {
+	width: 100%;
+	max-width: 300px;
+}
+.form-design .divider-horizontal {
+	width: calc(100% + 30px);
+	margin: 0 0 10px -15px;
+}
+.form-design label {
+	color: #47587a;
+	font-weight: 400;
+}
+.form-design .form-group-inline label {
+	width: 90px;
+	float: left;
+	line-height: 34px;
+}
+.form-design .form-group-inline select {
+	width: calc(100% - 90px);
+	float: left;	
+	border: 1px solid #cad8e5;
+}
+.form-design .group-checkbox {
+	margin-bottom: 10px;
+}
+.form-design .group-checkbox .wrap-form-checkbox {
+	width: 50%;
+	float: left;
+}
+.form-design .group-checkbox .wrap-form-checkbox p,
+.form-design .group-checkbox .wrap-form-checkbox .label-checkbox{
+	float: left;
+}
+.form-design .group-checkbox .wrap-form-checkbox p {
+	margin: 0;
+	line-height: 22px;
+	margin-left: 8px;
+}
+.form-design textarea {
+	width: 100%;
 }

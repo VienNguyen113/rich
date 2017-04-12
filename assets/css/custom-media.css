@@ -82,7 +82,7 @@
 	}
 
 	/*quotation page*/
-	.quotation-container .divider-vertical{
+	.quotation-container .divider-vertical {
 		display: none;
 	}
 	.card-preview .btnPreview {
@@ -90,8 +90,18 @@
 	}
 
 	/*invitation card edit*/
-	.invitation-card-edit-container .divider-vertical{
+	.invitation-card-edit-container .divider-vertical {
 		display: none;
+	}
+
+	/*invitation evelope detail*/
+	.invitation-envelope-detail-container .divider-vertical,
+	.invitation-envelope-detail-container .divider-vertical-right {
+		display: none;
+	}
+	.invitation-envelope-detail-container .form-design {
+		padding-top: 15px;
+		
 	}
 }
 

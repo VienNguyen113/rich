@@ -205,6 +205,22 @@ select {
     position: relative;
     top: 3px;
 }
+.btnAddFile {
+	position: relative;
+}
+.btnAddFile input {
+	position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-size: 0;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*checbox*/
 input.custom-checkbox {
@@ -505,20 +521,10 @@ input:checked ~ .label-checkbox:after {
 .select-with-icon select {
 	border: 0;
 	float: left;
-	width: calc(100% - 60px);
+	width: calc(100% - 30px);
 	color: #465879;
-	background: transparent;
+    background: url(../img/icons/select-down-blue.png) no-repeat transparent calc(100% - 4px) center/22px;
 	margin: 0;
-}
-.select-with-icon span {
-	font-size: 18px;
-    float: left;
-    width: 30px;
-    text-align: center;
-    color: #7588b3;
-    position: relative;
-    top: 7px;
-    font-weight: 600;
 }
 
 .form-group-with-icon {
@@ -537,6 +543,7 @@ input:checked ~ .label-checkbox:after {
     padding: 10px 30px 10px 10px;
     position: relative;
     float: left;
+    height: 100%;
 }
 .form-group-with-icon .form-select h5 {
     color: #465879;
@@ -548,23 +555,14 @@ input:checked ~ .label-checkbox:after {
 .form-group-with-icon .form-select select {
     border: 0;
     color: #b9c0cd;
-    background: transparent;
+    background: url(../img/icons/select-down-blue.png) no-repeat transparent calc(100% - 4px) center/22px;
     margin: 0;
-    padding: 0;
-    height: 28px;
-    line-height: 28px;
-    width: 100%;
-}
-.form-group-with-icon .form-select i {
-    font-size: 18px;
-    float: left;
-    width: 30px;
-    text-align: center;
-    color: #7588b3;
+    padding: 30px 10px 10px 10px;
     position: absolute;
-    top: 24px;
-    font-weight: 600;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .form-group-color {
@@ -1933,12 +1931,14 @@ input:checked ~ .label-checkbox:after {
 .quote-list-header{
 	line-height: 40px;
 	border-bottom: 1px solid #7588b2;
+	text-align: center;
 }
 .quote-list-header p {
 	font-size: 14px;
 	color: #7588b2;
 	line-height: 40px;
 	margin: 0;
+	display: inline-block;
 }
 .quote-list-header p span {
 	color: #333;
@@ -2010,137 +2010,13 @@ input:checked ~ .label-checkbox:after {
 	color: #6074a2;
 	margin: 0 0 5px;
 }
-.quote-detail button {
+.quote-detail .btn {
 	border: 0;
 	border-radius: 0;
 	text-transform: capitalize;
 	height: 34px;
 	line-height: 34px;
 	padding: 0 40px;
-}
-
-/*invitation card*/
-.invitation-card-tab .nav {
-	margin-bottom: 15px;
-	border-bottom: 2px solid #ebeff3;
-}
-.invitation-card-tab .nav li a {
-	border: 0;
-	font-size: 18px;
-	color: #48587b;
-	border-bottom: 2px solid #ebeff3;
-	margin-bottom: -1px;
-}
-.invitation-card-tab .nav li a:hover, 
-.invitation-card-tab .nav li.active a {
-	border: 0;
-	color: #222;
-	border-bottom: 2px solid #222222;
-	background: transparent;
-}
-.invitation-card-tab .carousel {
-	padding: 0;
-	height: 320px;
-	overflow: hidden;
-}
-.invitation-card-tab .carousel .carousel-inner img {
-	width: 100%;
-}
-.invitation-card-tab .carousel .carousel-control span {
-	font-size: 36px;
-	width: 36px;
-	height: 36px;
-	position: absolute;
-	top: calc(50% - 18px);
-	left: 5px;
-}
-.invitation-card-tab .carousel .carousel-control.right span {
-	left: auto;
-	right: 5px;
-}
-.invitation-card-tab .carousel-indicators li {
-	background: rgba(255, 255, 255, 0.7);
-	border: 0;
-}
-.invitation-card-tab .carousel-indicators .active {
-	width: 10px;
-	height: 10px;
-	margin: 1px;
-	background: rgba(255, 255, 255, 1);
-}
-.invitation-card-tab .paper-info {
-	border: 1px solid #cad8e5;
-	border-left: 0;
-	padding: 0;
-	height: 320px;
-	position: relative;
-}
-.invitation-card-tab .paper-info .paper-info-head {
-	padding: 18px 80px 18px 18px;
-	position: relative;
-	border-bottom: 1px solid #cad8e5;
-}
-.invitation-card-tab .paper-info .paper-info-head h4 {
-	font-size: 18px;
-}
-.invitation-card-tab .paper-info .paper-info-head h4,
-.invitation-card-tab .paper-info .paper-info-head p {
-	margin: 0;
-	color: #7386b2;
-	text-transform: initial;
-}
-.paper-info-head .price {
-    position: absolute;
-    width: 80px;
-    right: 0;
-    top: 0;
-    padding: 18px 18px 18px 0;
-    text-align: right;
-}
-.paper-info-head .price h5 {
-    margin: 0 0 4px;
-    font-size: 16px;
-}
-.invitation-card-tab .paper-info .paper-info-head .price p {
-    color: #333;
-}
-.paper-info-body {
-	padding: 25px 18px;
-}
-.paper-info-body p span {
-	color: #7386b2;
-	width: 80px;
-	display: inline-block;
-}
-.paper-info-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-.paper-info-footer button {
-	width: 50%;
-	float: left;
-	background: transparent;
-	color: #314e94;
-	border: 1px solid #7386b2;
-	line-height: 48px;
-	text-transform: initial;
-	border-radius: 0;
-	padding: 0;
-	margin-bottom: -1px;
-	border-left: 0;
-}
-.paper-info-footer button.bgBlue {
-	background: #7588b2;
-	color: #fff;
-	border: 1px solid #7588b2;
-}
-.invitation-card-tab .show-template {
-	text-align: center;
-	margin: 4% 0;
-}
-.invitation-card-tab .show-template a {
-	border-bottom: 1px solid #337ab7;
 }
 
 /*quotation page*/
@@ -2162,6 +2038,77 @@ input:checked ~ .label-checkbox:after {
 }
 .card-preview .wrap-img {
 	padding: 15px;
+}
+.invitation-card-row .card-preview .wrap-img {
+	margin-top: 15px;
+}
+
+.paper-info-sumary {
+	border: 1px solid #cad8e5;
+	padding: 0;
+	position: relative;
+}
+.paper-info-sumary .paper-info-head {
+	padding: 18px 80px 18px 18px;
+	position: relative;
+	border-bottom: 1px solid #cad8e5;
+}
+.paper-info-sumary .paper-info-head h4 {
+	font-size: 18px;
+}
+.paper-info-sumary .paper-info-head h4,
+.paper-info-sumary .paper-info-head p {
+	margin: 0;
+	color: #7386b2;
+	text-transform: initial;
+}
+.paper-info-sumary .paper-info-head .price {
+    position: absolute;
+    width: 80px;
+    right: 0;
+    top: 0;
+    padding: 18px 18px 18px 0;
+    text-align: right;
+}
+.paper-info-sumary .paper-info-head .price h5 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+.paper-info-sumary .paper-info-head .price p {
+    color: #333;
+}
+.paper-info-sumary .paper-info-body {
+	padding: 25px 18px;
+}
+.paper-info-sumary .paper-info-body p span {
+	color: #7386b2;
+	width: 80px;
+	display: inline-block;
+}
+.paper-info-sumary .paper-info-footer {
+	width: 100%;
+}
+.paper-info-sumary .paper-info-footer button {
+	width: 50%;
+	float: left;
+	background: transparent;
+	color: #314e94;
+	border: 1px solid #cad8e5;
+	line-height: 48px;
+	text-transform: initial;
+	border-radius: 0;
+	padding: 0;
+	margin-bottom: -1px;
+	border-left: 0;
+	border-right: 0;
+}
+.paper-info-sumary .paper-info-footer button.btn-view-quote {
+	background: #7588b2;
+	color: #fff;
+	border: 1px solid #7588b2;
+}
+.paper-info-sumary .paper-info-footer button.btn-view-quote:hover {
+	background: #465e92
 }
 
 /*invitation card edit page*/
@@ -2297,7 +2244,7 @@ input:checked ~ .label-checkbox:after {
 	right: -20px;
 }
 .simple-slider button.control span {
-	font-size: 24px;
+	font-size: 30px;
 	color: #fff;
 	position: relative;
 	top: 4px;
@@ -2310,14 +2257,12 @@ input:checked ~ .label-checkbox:after {
 .invitation-envelope-detail  {
 	text-align: center;
 }
+.invitation-envelope-detail-container .form-design {
+	margin-bottom: 25px;
+}
 .invitation-envelope-detail-container .divider-vertical{
 	position: absolute;
 	left: 66.66%;
-	top: -25px;
-	height: calc(100% + 25px);
-}
-.invitation-envelope-detail-container .divider-vertical.divider-vertical-right{
-	left: 100%;
 	top: -25px;
 	height: calc(100% + 25px);
 }
@@ -2329,8 +2274,7 @@ input:checked ~ .label-checkbox:after {
 	max-width: 300px;
 }
 .form-design .divider-horizontal {
-	width: calc(100% + 30px);
-	margin: 0 0 10px -15px;
+	margin: 0 0 10px 0;
 }
 .form-design label {
 	color: #47587a;
@@ -2345,6 +2289,7 @@ input:checked ~ .label-checkbox:after {
 	width: calc(100% - 90px);
 	float: left;	
 	border: 1px solid #cad8e5;
+    background: url(../img/icons/select-down-blue.png) no-repeat transparent calc(100% - 4px) center/22px;
 }
 .form-design .group-checkbox {
 	margin-bottom: 10px;

@@ -65,21 +65,6 @@
 		padding-left: 15px;
 		text-align: left;
 	}
-	/*invitation card*/
-	.invitation-card-tab .paper-info {
-	    border: 1px solid #cad8e5;
-	}
-	.paper-info-footer button {
-        border: 1px solid #cad8e5;
-        border-left: 0;
-	}
-	.invitation-card-tab .carousel,
-	.invitation-card-tab .paper-info {
-		height: auto;
-	}
-	.paper-info-footer {
-		position: initial;
-	}
 
 	/*quotation page*/
 	.quotation-container .divider-vertical {
@@ -88,6 +73,12 @@
 	.card-preview .btnPreview {
 		margin: 15px 0 0 15px;
 	}
+	.invitation-card-row .card-preview .btnPreview {
+		display: none;
+	}
+	.invitation-card-row .card-preview .wrap-img {
+	    margin-top: 0;
+	}
 
 	/*invitation card edit*/
 	.invitation-card-edit-container .divider-vertical {
@@ -95,8 +86,7 @@
 	}
 
 	/*invitation evelope detail*/
-	.invitation-envelope-detail-container .divider-vertical,
-	.invitation-envelope-detail-container .divider-vertical-right {
+	.invitation-envelope-detail-container .divider-vertical {
 		display: none;
 	}
 	.invitation-envelope-detail-container .form-design {

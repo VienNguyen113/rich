@@ -206,59 +206,42 @@
 
 							<div class="subpage-content">
 								<div class="invitation-envelope-detail-container clearfix">
-									<div class="col-sm-8">
-										<div class="processing">
-											<div class="process-bar clearfix">
-												<div class="process process-start pending">
-													<span><i></i></span>
-													<p class="status">Design</p>
-												</div>
-												<div class="process process-middle">
-													<span><i></i></span>
-													<p class="status">Wording</p>
-												</div>
-												<div class="process process-end">
-													<span><i></i></span>
-													<p class="status">Quotation</p>
+									
+									<div class="invitation-card-row clearfix">
+										<div class="col-sm-8">
+											<div class="processing">
+												<div class="process-bar clearfix">
+													<div class="process process-start pending">
+														<span><i></i></span>
+														<p class="status">Design</p>
+													</div>
+													<div class="process process-middle">
+														<span><i></i></span>
+														<p class="status">Wording</p>
+													</div>
+													<div class="process process-end">
+														<span><i></i></span>
+														<p class="status">Quotation</p>
+													</div>
 												</div>
 											</div>
 										</div>
-
-										<div class="invitation-envelope-detail-form">
-											<div class="col-sm-12 wrap-img">
-												<img src="assets/img/invitations/quotation2.png" alt="">
-											</div>
-											<div class="div-empty"></div>
-											<div class="col-sm-12 wrap-img">
-												<img src="assets/img/invitations/quotation1.png" alt="">
-											</div>
-											<div class="form-group marginTop10 clearfix col-sm-12">
-												<button class="btn btnNormal bgBlue">Go Quotation step</button>
-											</div>
+										<div class="col-sm-4 card-preview">
+											<button class="btnPreview">
+												<span class="ws-ws_eye"></span>
+												PREVIEW
+											</button>
 										</div>
 									</div>
-
-									<div class="col-sm-4 card-preview">
-										<form class="form-design">
+									<div class="invitation-card-row clearfix">
+										<div class="col-sm-8 form-design">
+											<h2 class="medium-title">Card</h2>
 											<div class="select-with-icon clearfix">
 												<i class="ws-ws_scalloped"></i>
 												<select name="" id="">
 													<option value="">SHAPE PROPERTIES</option>
 													<option value="">Optional</option>
 												</select>
-												<span class="ws-ws_caret-up iconRotate180"></span>
-											</div>
-											<div class="form-group-with-icon clearfix">
-												<div class="icon iconAnnouncement">
-												</div>
-												<div class="form-select">
-													<h5>Announcement</h5>
-													<select name="" id="">
-														<option value="">Envelope type</option>
-														<option value="">Optional</option>
-													</select>
-													<i class="ws-ws_caret-up iconRotate180"></i>
-												</div>
 											</div>
 											<div class="form-group-with-icon clearfix">
 												<div class="icon iconC6">
@@ -269,7 +252,6 @@
 														<option value="">45 inch x 6.4 inch</option>
 														<option value="">Optional</option>
 													</select>
-													<i class="ws-ws_caret-up iconRotate180"></i>
 												</div>
 											</div>
 
@@ -278,12 +260,10 @@
 											<div class="select-with-icon clearfix">
 												<i class="ws-ws_texture"></i>
 												<select name="" id="">
-													<option value="">MATERIAL PROPERTIES</option>
+													<option value="">PAPER PROPERTIES</option>
 													<option value="">Optional</option>
 												</select>
-												<span class="ws-ws_caret-up iconRotate180"></span>
 											</div>
-											<label for="">Paper type and texture</label>
 											<div class="form-group-with-icon clearfix">
 												<div class="icon iconCottonPearl">
 												</div>
@@ -293,7 +273,6 @@
 														<option value="">Matt paper</option>
 														<option value="">Optional</option>
 													</select>
-													<i class="ws-ws_caret-up iconRotate180"></i>
 												</div>
 											</div>
 											<div class="form-group-color">
@@ -309,7 +288,6 @@
 													<option value="">TEXT PROPERTIES</option>
 													<option value="">Optional</option>
 												</select>
-												<span class="ws-ws_caret-up iconRotate180"></span>
 											</div>
 											<div class="form-group-inline clearfix">
 												<label for="">Language:</label>
@@ -327,7 +305,6 @@
 														<option value="">Styling</option>
 														<option value="">Optional</option>
 													</select>
-													<i class="ws-ws_caret-up iconRotate180"></i>
 												</div>
 											</div>
 											<div class="form-group-color">
@@ -343,36 +320,141 @@
 													<option value="">ORTHER PROPERTIES</option>
 													<option value="">Optional</option>
 												</select>
-												<span class="ws-ws_caret-up iconRotate180"></span>
 											</div>
 											<div class="group-checkbox clearfix">
 												<label for="propLace" class="wrap-form-checkbox clearfix">
-													<input type="checkbox" class="custom-checkbox" id="propLace">
+													<input type="radio" name="other-property-card" class="custom-checkbox" id="propLace">
 													<span class="label-checkbox"></span>
 													<p>Lace</p>
 												</label>
 												<label for="propSwitching" class="wrap-form-checkbox clearfix">
-													<input type="checkbox" class="custom-checkbox" id="propSwitching">
+													<input type="radio" name="other-property-card" class="custom-checkbox" id="propSwitching">
 													<span class="label-checkbox"></span>
 													<p>Switching</p>
 												</label>
 												<label for="propRibbon" class="wrap-form-checkbox clearfix">
-													<input type="checkbox" checked="checked" class="custom-checkbox" id="propRibbon">
+													<input type="radio" name="other-property-card" checked="checked" class="custom-checkbox" id="propRibbon">
 													<span class="label-checkbox"></span>
 													<p>Ribbon</p>
 												</label>
 												<label for="propPearl" class="wrap-form-checkbox clearfix">
-													<input type="checkbox" class="custom-checkbox" id="propPearl">
+													<input type="radio" name="other-property-card" class="custom-checkbox" id="propPearl">
 													<span class="label-checkbox"></span>
 													<p>Pearl</p>
 												</label>
 											</div>
 											<textarea name="" id="" placeholder="Custom elements" rows="3"></textarea>
-										</form>
+										</div>
+										<div class="col-sm-4 card-preview">
+											<div class="wrap-img">
+												<img src="assets/img/invitations/quotation2.png" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="invitation-card-row clearfix">
+										<div class="col-sm-8 form-design">
+											<h2 class="medium-title">Envelope</h2>
+											<div class="form-group-with-icon clearfix">
+												<div class="icon iconAnnouncement">
+												</div>
+												<div class="form-select">
+													<h5>Announcement</h5>
+													<select name="" id="">
+														<option value="">Envelope type</option>
+														<option value="">Optional</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group-with-icon clearfix">
+												<div class="icon iconCottonPearl">
+												</div>
+												<div class="form-select">
+													<h5>Cotton in Pearl</h5>
+													<select name="" id="">
+														<option value="">Matt paper</option>
+														<option value="">Optional</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group-color">
+												<label for="">Paper color</label>
+												<div class="input-color">Input color here</div>
+											</div>
+
+											<div class="divider-horizontal"></div>
+
+											<div class="select-with-icon clearfix">
+												<i class="ws-ws_text"></i>
+												<select name="" id="">
+													<option value="">TEXT PROPERTIES</option>
+													<option value="">Optional</option>
+												</select>
+											</div>
+											<div class="form-group-inline clearfix">
+												<label for="">Language:</label>
+												<select name="" id="">
+													<option value="">English</option>
+													<option value="">Optional</option>
+												</select>
+											</div>
+											<div class="form-group-with-icon clearfix">
+												<div class="icon iconHotStamping">
+												</div>
+												<div class="form-select">
+													<h5>Hot stamping</h5>
+													<select name="" id="">
+														<option value="">Styling</option>
+														<option value="">Optional</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group-color">
+												<label for="">Text color</label>
+												<div class="input-color">Input color here</div>
+											</div>
+
+											<div class="divider-horizontal"></div>
+
+											<div class="select-with-icon clearfix">
+												<i class="ws-ws_misc"></i>
+												<select name="" id="">
+													<option value="">ORTHER PROPERTIES</option>
+													<option value="">Optional</option>
+												</select>
+											</div>
+											<div class="group-checkbox clearfix">
+												<label for="propLace2" class="wrap-form-checkbox clearfix">
+													<input type="radio" name="other-property-envelope" class="custom-checkbox" id="propLace2">
+													<span class="label-checkbox"></span>
+													<p>Lace</p>
+												</label>
+												<label for="propSwitching2" class="wrap-form-checkbox clearfix">
+													<input type="radio" name="other-property-envelope" class="custom-checkbox" id="propSwitching2">
+													<span class="label-checkbox"></span>
+													<p>Switching</p>
+												</label>
+												<label for="propRibbon2" class="wrap-form-checkbox clearfix">
+													<input type="radio" name="other-property-envelope" checked="checked" class="custom-checkbox" id="propRibbon2">
+													<span class="label-checkbox"></span>
+													<p>Ribbon</p>
+												</label>
+												<label for="propPearl2" class="wrap-form-checkbox clearfix">
+													<input type="radio" name="other-property-envelope" class="custom-checkbox" id="propPearl2">
+													<span class="label-checkbox"></span>
+													<p>Pearl</p>
+												</label>
+											</div>
+											<textarea name="" id="" placeholder="Custom elements" rows="3"></textarea>
+										</div>
+										<div class="col-sm-4 card-preview">
+											<div class="wrap-img">
+												<img src="assets/img/invitations/quotation1.png" alt="">
+											</div>
+										</div>
 									</div>
 
 									<div class="divider-vertical"></div>
-									<div class="divider-vertical divider-vertical-right"></div>
 								</div>
 							</div>
 						</div>

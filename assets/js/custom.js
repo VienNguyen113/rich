@@ -109,6 +109,34 @@ $(document).ready(function() {
 		};
 	})
 
+	/*
+	|--------------------------------------------------
+	| View Quote
+	|--------------------------------------------------
+	*/
+	$('.btn-view-quote').on('click', function() {
+		$('.quotation-form .form-request').removeClass('hidden');
+	})
+
+	/*
+	|--------------------------------------------------
+	| Choose Shape
+	|--------------------------------------------------
+	*/
+	$('.btn-choose-shape').on('click', function () {
+		shape = $(this).attr('alt');
+		console.log(shape);
+		$.ajax({
+			// url: "your url",
+
+		}).done(function(data) {
+			$('.simple-slider .view ul').empty();
+			// replace data in slide here
+			$('.btn-choose-shape').removeClass("active");
+			$(this).addClass("active");
+		});
+	})
+
 })
 
 $(window).scroll(function () {

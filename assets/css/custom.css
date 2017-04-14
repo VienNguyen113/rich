@@ -2312,37 +2312,29 @@ input:checked ~ .label-checkbox:after {
     margin-bottom: 14px;
     display: block;
 }
+.simple-slider .view ul li a:last-child {
+    margin-bottom: 0;
+}
 .simple-slider .view ul li a img {
 	width: 100%;
 }
 .simple-slider button.control {
-	background: #b9cade;
-	width: 34px;
-	height: 46px;
+	width: 50px;
+	height: 50px;
 	text-align: center;
 	line-height: 46px;
 	position: absolute;
-	top: calc(50% - 23px);
-	left: -23px;
+	top: calc(50% - 25px);
+	left: 14px;
+	background: url(../img/icons/arrow-slide.png) no-repeat rgba(236, 232, 232, 0.39) center center/22px;
 }
 .simple-slider button.control:hover {
-	background: #406fa7;
-}
-.simple-slider button.control:hover span{
-	color: #fff;
+   	background-color: rgba(206, 200, 200, 0.5);
 }
 .simple-slider button.control.control-right {
 	left: auto;
-	right: -23px;
-}
-.simple-slider button.control.control-right span {
-	left: -3px;
-}
-.simple-slider button.control span {
-	font-size: 40px;
-	color: #4e4a4a;
-	position: relative;
-	top: 2px;
+	right: 14px;
+	transform: rotate(180deg);
 }
 
 /*invitation envelope detail*/

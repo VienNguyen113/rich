@@ -202,6 +202,7 @@ setColumnOfSlider = function (windowWidth) {
 }
 setWidthOfEachSlider = function (column = 3) {
 	containerWidth = $('.simple-slider .view').width();
+	console.log(containerWidth)
 	$('.simple-slider .view ul li').css('width', containerWidth/column);
 }
 simpleSlideMoveLeft = function (column = 3) {

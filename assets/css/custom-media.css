@@ -5,6 +5,17 @@
 }
 
 @media screen and (max-width: 767px) {
+	.nav-V2.navbar-default .navbar-collapse {
+	    margin-right: 0;
+	}
+	.dropdown-notification {
+		right: 110px;
+		top: 11px;
+	}
+	.dropdown-notification .dropdown-menu {
+		top: calc(100% + 2px);
+	}
+	/*common*/
 	.formInline .form-group {
 		margin-bottom: 10px;
 	}
@@ -12,8 +23,8 @@
 		width: 84px;
 	}
 	.process-bar .process p {
-	    margin: 25px 0 0 -31px;
-	    width: 84px;
+		margin: 25px 0 0 -31px;
+		width: 84px;
 	}
 
 	.formInline .text-right {
@@ -51,7 +62,7 @@
 
 	/*invitation quote*/
 	.quote-gallery {
-	    height: auto;
+		height: auto;
 	}
 	.quote-gallery .quote-img {
 		width: 100% !important;
@@ -77,7 +88,7 @@
 		display: none;
 	}
 	.invitation-card-row .card-preview .wrap-img {
-	    margin-top: 0;
+		margin-top: 0;
 	}
 
 	/*invitation card edit*/
@@ -96,6 +107,13 @@
 }
 
 @media screen and (max-width: 480px) {
+	.dropdown-notification .dropdown-menu {
+		right: -108px;
+	}
+	.dropdown-notification .dropdown-menu li:first-child a:before, 
+	.dropdown-notification .dropdown-menu:before {
+		right: 117px;
+	}
 	/*common*/
 	.formInline .form-group .form-quote input, 
 	.formInline .form-group .form-quote select, 

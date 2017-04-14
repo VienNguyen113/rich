@@ -442,7 +442,7 @@ input:checked ~ .label-checkbox:after {
     right: 9px;
     width: 8px;
     height: 8px;
-    background: #627caf;
+    background: #ff4545;
     border-radius: 100%;
     content: "";
     display: none;
@@ -2317,13 +2317,13 @@ input:checked ~ .label-checkbox:after {
 }
 .simple-slider button.control {
 	background: #b9cade;
-	width: 30px;
-	height: 40px;
+	width: 34px;
+	height: 46px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 46px;
 	position: absolute;
-	top: calc(50% - 20px);
-	left: -20px;
+	top: calc(50% - 23px);
+	left: -23px;
 }
 .simple-slider button.control:hover {
 	background: #406fa7;
@@ -2333,13 +2333,16 @@ input:checked ~ .label-checkbox:after {
 }
 .simple-slider button.control.control-right {
 	left: auto;
-	right: -20px;
+	right: -23px;
+}
+.simple-slider button.control.control-right span {
+	left: -3px;
 }
 .simple-slider button.control span {
-	font-size: 30px;
+	font-size: 40px;
 	color: #4e4a4a;
 	position: relative;
-	top: 4px;
+	top: 2px;
 }
 
 /*invitation envelope detail*/
